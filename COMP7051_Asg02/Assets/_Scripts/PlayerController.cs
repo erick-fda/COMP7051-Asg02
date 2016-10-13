@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (Input.GetKeyDown("u")) {
-            Debug.Log("hi");
             detectCollisions = !detectCollisions;
             rb.isKinematic = !detectCollisions;
             
