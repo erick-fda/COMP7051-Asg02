@@ -1,0 +1,7 @@
+<map id="IRefs.GetKeyboardKeyDown" name="IRefs.GetKeyboardKeyDown">
+<area shape="rect" id="node2" href="$class_i_refs.html#a8f72547843cd85ee67407ae93ea28b5b" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="240,31,371,57"/>
+<area shape="rect" id="node3" href="$class_day_night.html#a5f89e325d4fae6d6db2ad77902d82f86" title="DayNight.ToggleLighting" alt="" coords="419,5,581,32"/>
+<area shape="rect" id="node5" href="$class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11" title="Scene.ToggleFog" alt="" coords="439,56,561,83"/>
+<area shape="rect" id="node4" href="$class_day_night.html#a47b6d77ec116a56b1b78311f0e8e3d6b" title="Called once per frame. " alt="" coords="629,5,749,32"/>
+<area shape="rect" id="node6" href="$class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. " alt="" coords="637,56,741,83"/>
+</map>
