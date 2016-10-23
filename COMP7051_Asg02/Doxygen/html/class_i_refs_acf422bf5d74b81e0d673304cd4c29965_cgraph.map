@@ -1,0 +1,4 @@
+<map id="IRefs.GetKeyUp" name="IRefs.GetKeyUp">
+<area shape="rect" id="node2" href="$class_i_refs.html#aa9772433dbacbf7327cf54db7399858f" title="Returns true during the frame the requested command ends from a keyboard or mouse key for a specific ..." alt="" coords="172,5,343,32"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#aeb32d48f201760947269cc91507b4288" title="Returns true during the frame the requested command ends from a joystick button for a specific player..." alt="" coords="168,56,347,83"/>
+</map>
