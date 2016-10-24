@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetFloat("forwardMotion", 1);
         }
 
-        if (Input.GetKeyDown("u")) {
+        if (Input.GetKeyDown("w")) {
             detectCollisions = !detectCollisions;
             rb.isKinematic = !detectCollisions;
             
