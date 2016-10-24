@@ -1,23 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**control player character movement and animation*/
 public class PlayerController : MonoBehaviour {
-    private Animator anim;
-    private CharacterController controller;
-    public float turnSpeed = 100;// how fast the character can turn
-    public float walkSpeed = 5; //character walking speed
-    public float runSpeed = 10;// character running speed
+    
+    /**Character turning speed*/
+    public float turnSpeed = 100;
+
+    /**character walking speed*/
+    public float walkSpeed = 5; 
+
+    /**character running speed*/
+    public float runSpeed = 10;
+
+    /**player character's rigidbody*/
     private Rigidbody rb;
+
+    /**is the player able to walk through walls*/
     private bool detectCollisions = true;
+
+    /** the animaor that handles the player character's animations*/
+    private Animator anim;
 
     // Use this for initialization
     void Start() {
         anim = GetComponent<Animator>();
         if (anim == null)
             Debug.Log("no animator found on" + gameObject.name);
-        controller = GetComponent<CharacterController>();
-        if (anim == null)
-            Debug.Log("no CharacterController found on" + gameObject.name);
 
         rb = GetComponent<Rigidbody>();
     }
