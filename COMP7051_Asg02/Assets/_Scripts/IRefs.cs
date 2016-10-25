@@ -41,6 +41,7 @@ public static class IRefs
         /* Keyboard and Button Commands */
         ToggleLighting,
         ToggleFog
+ 
 
         /* Axis Commands */
         // e.g. -- MoveVertical,
@@ -58,7 +59,7 @@ public static class IRefs
     {
         /* Key and Button Commands */
         {Command.ToggleLighting,    "ToggleLighting"},
-        {Command.ToggleFog,         "ToggleFog"}
+        {Command.ToggleFog,         "ToggleFog"},
 
         /* Axis Commands */
         // e.g. -- {Command.MoveVertical,   "MoveVertical"}

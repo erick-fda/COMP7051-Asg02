@@ -13,6 +13,7 @@
 	Dependencies
 ===========================================================================================*/
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*===========================================================================================
 	Scene
@@ -105,6 +106,8 @@ public sealed class Scene : MonoBehaviour
     void Update()
     {
         ToggleFog();
+
+        resetScene();
     }
 
     /**
@@ -138,6 +141,12 @@ public sealed class Scene : MonoBehaviour
         {
             RenderSettings.fog = !RenderSettings.fog;
         }
+    }
+
+    /**reloads the current scenee on user input*/
+    private void resetScene() {
+        if (Input.GetKeyDown("home"))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     /*---------------------------------------------------------------------------------------
