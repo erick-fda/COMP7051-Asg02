@@ -5,8 +5,11 @@ var hierarchy =
     ] ],
     [ "IRefs", "class_i_refs.html", null ],
     [ "MonoBehaviour", null, [
+      [ "CameraController", "class_camera_controller.html", null ],
       [ "DayNight", "class_day_night.html", null ],
       [ "DebugCameraController", "class_debug_camera_controller.html", null ],
+      [ "MonsterController", "class_monster_controller.html", null ],
+      [ "PlayerController", "class_player_controller.html", null ],
       [ "Scene", "class_scene.html", null ]
     ] ]
 ];

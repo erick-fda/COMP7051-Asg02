@@ -117,21 +117,17 @@ $(document).ready(function(){initNavTree('class_scene.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Manages scene state and acts as a MonoBehaviour agent for the GameController.  
+<p>Manages scene state and acts as a MonoBehaviour agent for the Game.  
  <a href="class_scene.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene__inherit__graph.png" border="0" usemap="#_scene_inherit__map" alt="Inheritance graph"/></div>
-<map name="_scene_inherit__map" id="_scene_inherit__map">
-</map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene__coll__graph.png" border="0" usemap="#_scene_coll__map" alt="Collaboration graph"/></div>
-<map name="_scene_coll__map" id="_scene_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -159,18 +155,20 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aae8692dd9cfe6710e866e640c0f37231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb99cd37ee6d74865bfa54d3fc22d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11">ToggleFog</a> ()</td></tr>
 <tr class="separator:a7bb99cd37ee6d74865bfa54d3fc22d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16227557e6f919fa4272a819efe527d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a16227557e6f919fa4272a819efe527d9">resetScene</a> ()</td></tr>
+<tr class="separator:a16227557e6f919fa4272a819efe527d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f4b7d33220c65d1894281b23a51139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a10f4b7d33220c65d1894281b23a51139">EnforceSingleton</a> ()</td></tr>
-<tr class="memdesc:a10f4b7d33220c65d1894281b23a51139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the GameController. ">Scene</a>.  <a href="#a10f4b7d33220c65d1894281b23a51139">More...</a><br /></td></tr>
+<tr class="memdesc:a10f4b7d33220c65d1894281b23a51139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>.  <a href="#a10f4b7d33220c65d1894281b23a51139">More...</a><br /></td></tr>
 <tr class="separator:a10f4b7d33220c65d1894281b23a51139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_scene.html">Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9">instance</a> = null</td></tr>
-<tr class="memdesc:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the GameController. ">Scene</a> instance.  <a href="#ac45c42a9eedd3201b1d83e7e26e10ab9">More...</a><br /></td></tr>
+<tr class="memdesc:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a> instance.  <a href="#ac45c42a9eedd3201b1d83e7e26e10ab9">More...</a><br /></td></tr>
 <tr class="separator:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages scene state and acts as a MonoBehaviour agent for the GameController. </p>
+<div class="textblock"><p>Manages scene state and acts as a MonoBehaviour agent for the Game. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab98b367a03b266c4d180bb191c78ac29"></a>
 <div class="memitem">
@@ -195,7 +193,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Called once when the script is loaded. </p>
 <p>Used for setting up references to other scripts and enforcing singleton behaviours on MonoBehaviours.</p>
-<p>Enforces the singleton pattern on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the GameController. ">Scene</a>. </p>
+<p>Enforces the singleton pattern on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>. </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -230,7 +228,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the GameController. ">Scene</a>. </p>
+<p>Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>. </p>
 <p>Prevents secondary instances from being created and destroys them if they are. </p>
 
 <p><div class="dynheader">
@@ -297,6 +295,39 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a16227557e6f919fa4272a819efe527d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene.resetScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_a16227557e6f919fa4272a819efe527d9_icgraph.png" border="0" usemap="#class_scene_a16227557e6f919fa4272a819efe527d9_icgraph" alt=""/></div>
+<map name="class_scene_a16227557e6f919fa4272a819efe527d9_icgraph" id="class_scene_a16227557e6f919fa4272a819efe527d9_icgraph">
+<area shape="rect" id="node2" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. " alt="" coords="183,5,287,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ac3a567b103bd5d3590b85747b7672380"></a>
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +381,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph.png" border="0" usemap="#class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph" alt=""/></div>
 <map name="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph" id="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph">
-<area shape="rect" id="node2" href="class_i_refs.html#a8f72547843cd85ee67407ae93ea28b5b" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="176,31,307,57"/>
+<area shape="rect" id="node2" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="176,31,307,57"/>
 <area shape="rect" id="node3" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="359,5,545,32"/>
 <area shape="rect" id="node4" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="355,56,549,83"/>
 </map>
@@ -399,10 +430,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph.png" border="0" usemap="#class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph" alt=""/></div>
 <map name="class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph" id="class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph">
-<area shape="rect" id="node2" href="class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11" title="Scene.ToggleFog" alt="" coords="157,31,280,57"/>
-<area shape="rect" id="node3" href="class_i_refs.html#a8f72547843cd85ee67407ae93ea28b5b" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="328,31,459,57"/>
-<area shape="rect" id="node4" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="511,5,697,32"/>
-<area shape="rect" id="node5" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="507,56,701,83"/>
+<area shape="rect" id="node2" href="class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11" title="Scene.ToggleFog" alt="" coords="161,31,283,57"/>
+<area shape="rect" id="node6" href="class_scene.html#a16227557e6f919fa4272a819efe527d9" title="Scene.resetScene" alt="" coords="157,81,287,108"/>
+<area shape="rect" id="node3" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="335,31,465,57"/>
+<area shape="rect" id="node4" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="517,5,704,32"/>
+<area shape="rect" id="node5" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="513,56,708,83"/>
 </map>
 </div>
 </p>
@@ -428,7 +460,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the GameController. ">Scene</a> instance. </p>
+<p>Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a> instance. </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 <map id="IRefs.GetKeyboardAxis" name="IRefs.GetKeyboardAxis">
-<area shape="rect" id="node2" href="$class_i_refs.html#a5fb3c91926502707da9a7663bc22ce9a" title="Returns the value of the axis for the requested command from keyboard and mouse or joystick inputs fo..." alt="" coords="211,5,313,32"/>
-<area shape="rect" id="node3" href="$class_i_refs.html#a83756cc0a91e2bdac33c673e1a6fc86e" title="Returns the normalized value of the axis for the requested command from keyboard and mouse or joystic..." alt="" coords="361,5,488,32"/>
+<area shape="rect" id="node2" href="$class_i_refs.html#abace9c64ce11141fe6314d7331eb8d99" title="Returns the value of the axis for the requested command from keyboard and mouse or joystick inputs fo..." alt="" coords="211,5,313,32"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a283c813976c088d846e7227227ed78ab" title="Returns the normalized value of the axis for the requested command from keyboard and mouse or joystic..." alt="" coords="361,5,488,32"/>
 </map>

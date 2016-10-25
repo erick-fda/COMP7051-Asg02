@@ -1,10 +1,10 @@
 ﻿/*===========================================================================================
-    Scene                                                                     *//**
+    Scene                                                                               *//**
 	
 	Manages scene state and acts as a MonoBehaviour agent for the Game.
 	
 	@author Erick Fernandez de Arteaga - https://www.linkedin.com/in/erickfda
-	@version 0.1.0
+	@version 0.2.0
 	@file
 	
 *//*=======================================================================================*/
@@ -19,7 +19,7 @@ using UnityEngine.SceneManagement;
 	Scene
 ===========================================================================================*/
 /**
-	Manages scene state and acts as a MonoBehaviour agent for the GameController.
+	Manages scene state and acts as a MonoBehaviour agent for the Game.
 */
 public sealed class Scene : MonoBehaviour
 {
@@ -137,13 +137,13 @@ public sealed class Scene : MonoBehaviour
     private void ToggleFog()
     {
         /* Toggle fog if key goes down. */
-        if (IRefs.GetKeyDown(IRefs.Command.ToggleFog, IRefs.InputSource.KeyboardMouse, 1))
+        if (IRefs.GetKeyDown(IRefs.Command.ToggleFog))
         {
             RenderSettings.fog = !RenderSettings.fog;
         }
     }
 
-    /**reloads the current scenee on user input*/
+    /* Reload the current scene on user input. */
     private void resetScene() {
         if (Input.GetKeyDown("home"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

@@ -1,0 +1,6 @@
+<map id="IRefs.GetAxisRaw" name="IRefs.GetAxisRaw">
+<area shape="rect" id="node2" href="$class_i_refs.html#abace9c64ce11141fe6314d7331eb8d99" title="Returns the value of the axis for the requested command from keyboard and mouse or joystick inputs fo..." alt="" coords="180,56,283,83"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a642a98b6369b2b85290767868e63c6d0" title="Returns the value of the axis with the greatest absolute value from those passed in as parameters..." alt="" coords="335,5,484,32"/>
+<area shape="rect" id="node4" href="$class_i_refs.html#af379d0286536bb530df7376aa183baa5" title="Returns the value of the axis for the requested command from keyboard and mouse inputs for a specific..." alt="" coords="331,56,488,83"/>
+<area shape="rect" id="node5" href="$class_i_refs.html#a2b960c2bf0c7d6d7b27e34ea4d43ee1b" title="Returns the value of the axis for the requested command from joystick inputs for a specific player..." alt="" coords="334,107,485,133"/>
+</map>
