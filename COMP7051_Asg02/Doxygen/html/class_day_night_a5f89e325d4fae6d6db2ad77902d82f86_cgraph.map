@@ -1,5 +1,5 @@
 <map id="DayNight.ToggleLighting" name="DayNight.ToggleLighting">
-<area shape="rect" id="node2" href="$class_i_refs.html#a8f72547843cd85ee67407ae93ea28b5b" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="216,31,347,57"/>
+<area shape="rect" id="node2" href="$class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="216,31,347,57"/>
 <area shape="rect" id="node3" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="399,5,585,32"/>
 <area shape="rect" id="node4" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="395,56,589,83"/>
 </map>

@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['y',['Y',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa57cec4137b614c87cb4e24a3d003a3e0',1,'IRefs']]],
-  ['y_5fp1',['Y_P1',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa1429a7f348addca3e05868e6c5406fa6',1,'IRefs']]],
-  ['y_5fp2',['Y_P2',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aab12ef6db5a2a083c996ddb998aa7a928',1,'IRefs']]],
-  ['y_5fp3',['Y_P3',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aae9646d1f18de99f63236c2b72caee96a',1,'IRefs']]],
-  ['y_5fp4',['Y_P4',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa1174fbc25ba8d16a8534c18cc665a97c',1,'IRefs']]],
-  ['y_5fp5',['Y_P5',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa835544c7b3e2843715391ab11214f87a',1,'IRefs']]],
-  ['y_5fp6',['Y_P6',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aaaa0f4c07fcd093591077569f4470bc57',1,'IRefs']]],
-  ['y_5fp7',['Y_P7',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa56c1642e4349e95fbf5c2c1f392c5624',1,'IRefs']]],
-  ['y_5fp8',['Y_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa02c016d4d3f99bd3b397bb2fa9b3a8cd',1,'IRefs']]]
+  ['unsupportedplatformexception',['UnsupportedPlatformException',['../class_i_refs_1_1_unsupported_platform_exception.html',1,'IRefs']]],
+  ['unsupportedplatformexception',['UnsupportedPlatformException',['../class_i_refs_1_1_unsupported_platform_exception.html#a75f67266f25520e397e250e3438e7e70',1,'IRefs.UnsupportedPlatformException.UnsupportedPlatformException()'],['../class_i_refs_1_1_unsupported_platform_exception.html#a43d915982d8be456958ba36a7feae4fc',1,'IRefs.UnsupportedPlatformException.UnsupportedPlatformException(string message)'],['../class_i_refs_1_1_unsupported_platform_exception.html#afd69d09d906c64bcab1039975e3fe7db',1,'IRefs.UnsupportedPlatformException.UnsupportedPlatformException(string message, System.Exception innerException)']]],
+  ['update',['Update',['../class_camera_controller.html#a7c4f486f4bcbd1d54a346fdce9707bd5',1,'CameraController.Update()'],['../class_day_night.html#a47b6d77ec116a56b1b78311f0e8e3d6b',1,'DayNight.Update()'],['../class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43',1,'PlayerController.Update()'],['../class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95',1,'Scene.Update()'],['../class_debug_camera_controller.html#a4eb325fbf242d61950d0f4bf05aa8e50',1,'DebugCameraController.Update()']]]
 ];

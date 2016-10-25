@@ -1,6 +1,7 @@
 <map id="Scene.Update" name="Scene.Update">
-<area shape="rect" id="node2" href="$class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11" title="Scene.ToggleFog" alt="" coords="157,31,280,57"/>
-<area shape="rect" id="node3" href="$class_i_refs.html#a8f72547843cd85ee67407ae93ea28b5b" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="328,31,459,57"/>
-<area shape="rect" id="node4" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="511,5,697,32"/>
-<area shape="rect" id="node5" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="507,56,701,83"/>
+<area shape="rect" id="node2" href="$class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11" title="Scene.ToggleFog" alt="" coords="161,31,283,57"/>
+<area shape="rect" id="node6" href="$class_scene.html#a16227557e6f919fa4272a819efe527d9" title="Scene.resetScene" alt="" coords="157,81,287,108"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="335,31,465,57"/>
+<area shape="rect" id="node4" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="517,5,704,32"/>
+<area shape="rect" id="node5" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="513,56,708,83"/>
 </map>

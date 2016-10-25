@@ -41,7 +41,6 @@ public static class IRefs
         /* Keyboard and Button Commands */
         ToggleLighting,
         ToggleFog
- 
 
         /* Axis Commands */
         // e.g. -- MoveVertical,
@@ -59,7 +58,7 @@ public static class IRefs
     {
         /* Key and Button Commands */
         {Command.ToggleLighting,    "ToggleLighting"},
-        {Command.ToggleFog,         "ToggleFog"},
+        {Command.ToggleFog,         "ToggleFog"}
 
         /* Axis Commands */
         // e.g. -- {Command.MoveVertical,   "MoveVertical"}
@@ -85,8 +84,8 @@ public static class IRefs
         // e.g. -- {CommandStrings[Command.MoveUp] + 0, KeyCode.UpArrow},
 
         /* Player 1 Commands */
-        {CommandStrings[Command.ToggleLighting] + 1,    KeyCode.L},
-        {CommandStrings[Command.ToggleFog] + 1,         KeyCode.F}
+        {CommandStrings[Command.ToggleLighting] + 1,  KeyCode.L},
+        {CommandStrings[Command.ToggleFog] + 1,       KeyCode.F}
     };
 
     /*---------------------------------------------------------------------------------------
@@ -107,7 +106,8 @@ public static class IRefs
         // e.g. -- {CommandStrings[Command.MoveUp] + 0, JoystickButton.LeftBumper},
 
         /* Player 1 Commands */
-        // e.g. -- {CommandStrings[Command.MoveUp] + 1, JoystickButton.LeftBumper_P1},
+        {CommandStrings[Command.ToggleLighting] + 1,    JoystickButton.Back_P1},
+        {CommandStrings[Command.ToggleFog] + 1,         JoystickButton.Start_P1}
     };
 
     /*---------------------------------------------------------------------------------------
@@ -805,7 +805,7 @@ public static class IRefs
                                 with zero indicating that all players' input should be 
                                 checked. Defaults to 1.
     */
-    public static bool GetKey(IRefs.Command command, IRefs.InputSource inputSource = IRefs.InputSource.Any, int playerNumber = 1)
+    public static bool GetKey(IRefs.Command command, int playerNumber = 1, IRefs.InputSource inputSource = IRefs.InputSource.Any)
     {
         /* If an invalid player is requested, throw an ArgumentOutOfRangeException. */
         if ((playerNumber < 0) || (playerNumber > 8))
@@ -861,7 +861,7 @@ public static class IRefs
                                 with zero indicating that all players' input should be 
                                 checked. Defaults to 1.
     */
-    public static bool GetKeyDown(IRefs.Command command, IRefs.InputSource inputSource = IRefs.InputSource.Any, int playerNumber = 1)
+    public static bool GetKeyDown(IRefs.Command command, int playerNumber = 1, IRefs.InputSource inputSource = IRefs.InputSource.Any)
     {
         /* If an invalid player is requested, throw an ArgumentOutOfRangeException. */
         if ((playerNumber < 0) || (playerNumber > 8))
@@ -917,7 +917,7 @@ public static class IRefs
                                 with zero indicating that all players' input should be 
                                 checked. Defaults to 1.
     */
-    public static bool GetKeyUp(IRefs.Command command, IRefs.InputSource inputSource = IRefs.InputSource.Any, int playerNumber = 1)
+    public static bool GetKeyUp(IRefs.Command command, int playerNumber = 1, IRefs.InputSource inputSource = IRefs.InputSource.Any)
     {
         /* If an invalid player is requested, throw an ArgumentOutOfRangeException. */
         if ((playerNumber < 0) || (playerNumber > 8))
@@ -1192,7 +1192,7 @@ public static class IRefs
                                 with zero indicating that all players' input should be 
                                 checked. Defaults to 1.
     */
-    public static float GetAxis(IRefs.Command command, IRefs.InputSource inputSource = IRefs.InputSource.Any, int playerNumber = 1)
+    public static float GetAxis(IRefs.Command command, int playerNumber = 1, IRefs.InputSource inputSource = IRefs.InputSource.Any)
     {
         /* If an invalid player is requested, throw an ArgumentOutOfRangeException. */
         if ((playerNumber < 0) || (playerNumber > 8))
@@ -1289,7 +1289,7 @@ public static class IRefs
                                 with zero indicating that all players' input should be 
                                 checked. Defaults to 1.
     */
-    public static float GetAxisRaw(IRefs.Command command, IRefs.InputSource inputSource = IRefs.InputSource.Any, int playerNumber = 1)
+    public static float GetAxisRaw(IRefs.Command command, int playerNumber = 1, IRefs.InputSource inputSource = IRefs.InputSource.Any)
     {
         /* If an invalid player is requested, throw an ArgumentOutOfRangeException. */
         if ((playerNumber < 0) || (playerNumber > 8))
@@ -1301,7 +1301,7 @@ public static class IRefs
 
         /* Get the dominant axis for the requested command from the requested input source 
             for the requested player. */
-        float axis = IRefs.GetAxis(command, inputSource, playerNumber);
+        float axis = IRefs.GetAxis(command, playerNumber, inputSource);
 
         /* Return the normalized value of the axis. */
         return System.Math.Sign(axis);

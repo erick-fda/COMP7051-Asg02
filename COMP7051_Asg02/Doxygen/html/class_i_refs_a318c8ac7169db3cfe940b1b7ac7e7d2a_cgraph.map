@@ -1,0 +1,4 @@
+<map id="IRefs.GetKeyDown" name="IRefs.GetKeyDown">
+<area shape="rect" id="node2" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="188,5,375,32"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="184,56,379,83"/>
+</map>
