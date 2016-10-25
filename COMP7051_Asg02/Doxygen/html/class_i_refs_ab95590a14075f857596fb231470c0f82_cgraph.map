@@ -1,0 +1,4 @@
+<map id="IRefs.GetKey" name="IRefs.GetKey">
+<area shape="rect" id="node2" href="$class_i_refs.html#a7c4ffa56431c7d499c60f2ee7b973a60" title="Returns true while the requested command is active from a keyboard or mouse key for a specific player..." alt="" coords="156,5,311,32"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a460145658fc93246db843dcbeeff329c" title="Returns true while the requested command is active from a joystick button for a specific player..." alt="" coords="152,56,315,83"/>
+</map>

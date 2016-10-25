@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['togglefog',['ToggleFog',['../class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11',1,'Scene.ToggleFog()'],['../class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a9407de2142f3c56b81cdc93113b08a22',1,'IRefs.ToggleFog()']]],
-  ['togglelighting',['ToggleLighting',['../class_day_night.html#a5f89e325d4fae6d6db2ad77902d82f86',1,'DayNight.ToggleLighting()'],['../class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a0ad39ad6d4ff3672e2521d83acc7a31a',1,'IRefs.ToggleLighting()']]]
+  ['rb',['rb',['../class_monster_controller.html#a973aca9ffb7abc404da6f24dca70886d',1,'MonsterController.rb()'],['../class_player_controller.html#a93b9fa76e5456725594e87dd40f93611',1,'PlayerController.rb()']]],
+  ['resetscene',['resetScene',['../class_scene.html#a16227557e6f919fa4272a819efe527d9',1,'Scene']]],
+  ['rightbumper',['RightBumper',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa509b4eb4dd040194b2aa506683ccfbad',1,'IRefs']]],
+  ['rightbumper_5fp1',['RightBumper_P1',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aabe978fe4edd34a340966401515ad628d',1,'IRefs']]],
+  ['rightbumper_5fp2',['RightBumper_P2',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa7d7e51c3361f61ede4572e221c9c844e',1,'IRefs']]],
+  ['rightbumper_5fp3',['RightBumper_P3',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa3f4d528d3c70d31a43338a609957293e',1,'IRefs']]],
+  ['rightbumper_5fp4',['RightBumper_P4',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aab2af9083c3a4f70af8c8e95bdf366a97',1,'IRefs']]],
+  ['rightbumper_5fp5',['RightBumper_P5',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aadad95ff2d2111e0e5b53cf5d8adae0c0',1,'IRefs']]],
+  ['rightbumper_5fp6',['RightBumper_P6',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aaec105e9c097bccae3afbdb1574545267',1,'IRefs']]],
+  ['rightbumper_5fp7',['RightBumper_P7',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aac08abf227f5f0d34e4dd5b459c0794de',1,'IRefs']]],
+  ['rightbumper_5fp8',['RightBumper_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa5589ccc71e7a82c10dd1cd4ebc24b22b',1,'IRefs']]],
+  ['rightstick',['RightStick',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa8e2f56dca504cbbdf54b6ba95989aed7',1,'IRefs']]],
+  ['rightstick_5fp1',['RightStick_P1',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aaa98d3f4030ae44ac21114afecd3b5b45',1,'IRefs']]],
+  ['rightstick_5fp2',['RightStick_P2',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa31cb02a2a31b53ce64af3ced896f5b81',1,'IRefs']]],
+  ['rightstick_5fp3',['RightStick_P3',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aaf32312a0659748799e3c5bafc3ff07d3',1,'IRefs']]],
+  ['rightstick_5fp4',['RightStick_P4',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aada696d0ba973e7e91961981078318c87',1,'IRefs']]],
+  ['rightstick_5fp5',['RightStick_P5',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa3e9a8d3591078a873d385b4bdb74d5fb',1,'IRefs']]],
+  ['rightstick_5fp6',['RightStick_P6',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aac484497b04a71eef479630b98c86834f',1,'IRefs']]],
+  ['rightstick_5fp7',['RightStick_P7',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa8c61fdda57cd04a15bdcfbc1a91fff23',1,'IRefs']]],
+  ['rightstick_5fp8',['RightStick_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aae01d44b58125d4d8e9f42572de18771e',1,'IRefs']]],
+  ['runspeed',['runSpeed',['../class_player_controller.html#a40299964fecfbf0ca1399d7ca1cb27b9',1,'PlayerController']]]
 ];
