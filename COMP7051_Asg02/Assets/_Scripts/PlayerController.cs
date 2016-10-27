@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 
 /**control player character movement and animation*/
 public class PlayerController : MonoBehaviour {
@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour {
     /** the animaor that handles the player character's animations*/
     private Animator anim;
 
+    private bool isRunning = false;
+
     // Use this for initialization
     void Start() {
         anim = GetComponent<Animator>();
@@ -38,28 +40,48 @@ public class PlayerController : MonoBehaviour {
         else
             anim.SetFloat("forwardMotion", 0);
 
-        bool isRunning = false;
-        if (Input.GetAxis("Run") > 0)
-            isRunning = true;
+        
+        if (IRefs.GetKeyDown(IRefs.Command.PlayerRun))
+            isRunning = !isRunning;
 
         anim.SetBool("run", isRunning);
 
 
-
+        //forward movement (controller and keyboard)
         if(Input.GetAxis("Vertical") > 0 && !isRunning)
             transform.Translate(transform.forward * Input.GetAxis("Vertical") * walkSpeed * Time.deltaTime, Space.World);
         else if(Input.GetAxis("Vertical") > 0 && isRunning)
             transform.Translate(transform.forward * Input.GetAxis("Vertical") * runSpeed * Time.deltaTime, Space.World);
 
+        //rotation (controller and keyboard)
         if (Input.GetAxis("Horizontal") != 0) {
             transform.Rotate(0, Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime, 0);
             anim.SetFloat("forwardMotion", 1);
         }
 
-        if (Input.GetKeyDown("w"))
+        //touchscreen movement
+        if (Input.touchCount == 1) {
+            //forward movement
+            float moveSpeed = Input.GetTouch(0).position.y / Screen.height;
+            if (isRunning)
+                transform.Translate(transform.forward * moveSpeed * runSpeed * Time.deltaTime, Space.World);
+            else
+                transform.Translate(transform.forward * moveSpeed * walkSpeed * Time.deltaTime, Space.World);
+
+            //rotation
+            float rotateSpeed = Input.GetTouch(0).position.x / Screen.width;
+            transform.Rotate(0, rotateSpeed * turnSpeed * Time.deltaTime, 0);
+            anim.SetFloat("forwardMotion", Math.Max(moveSpeed, rotateSpeed));
+        }
+
+
+      
+
+        if (IRefs.GetKeyDown(IRefs.Command.ToggleWalkThroughWalls))
             toggleDetectCollisions();
         
     }
+
 
     public void toggleDetectCollisions() {
         detectCollisions = !detectCollisions;

@@ -107,7 +107,7 @@ public sealed class Scene : MonoBehaviour
     {
         ToggleFog();
 
-        if (Input.GetKeyDown("home"))
+        if (IRefs.GetKeyDown(IRefs.Command.ResetGame))
             resetScene();
     }
 
