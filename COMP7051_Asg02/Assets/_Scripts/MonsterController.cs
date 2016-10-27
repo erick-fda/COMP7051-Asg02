@@ -12,9 +12,6 @@ public class MonsterController : MonoBehaviour {
     /**how long the monster continues to turn after it is no longer colliding with an object*/
     public float turningTime = 1;
 
-    /**the the monter's rigidbody*/
-    private Rigidbody rb;
-
     /** the direction to turn in positive = right negetive = left. This is set in OnCollisionStay()*/
     private float turnDirection = 1;
 
@@ -30,7 +27,6 @@ public class MonsterController : MonoBehaviour {
     // Use this for initialization
     void Start() {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame

@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour {
 
         //touchscreen movement
         if (Input.touchCount == 1) {
+            //Debug.Log("Single touch detected");
             //forward movement
             float moveSpeed = Input.GetTouch(0).position.y / Screen.height;
             if (isRunning)
@@ -69,7 +70,7 @@ public class PlayerController : MonoBehaviour {
                 transform.Translate(transform.forward * moveSpeed * walkSpeed * Time.deltaTime, Space.World);
 
             //rotation
-            float rotateSpeed = Input.GetTouch(0).position.x / Screen.width;
+            float rotateSpeed = Input.GetTouch(0).position.x / Screen.width - .5f;
             transform.Rotate(0, rotateSpeed * turnSpeed * Time.deltaTime, 0);
             anim.SetFloat("forwardMotion", Math.Max(moveSpeed, rotateSpeed));
         }
