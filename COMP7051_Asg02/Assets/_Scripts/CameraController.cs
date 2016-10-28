@@ -57,20 +57,20 @@ public class CameraController : MonoBehaviour {
         }
 
         //rotate camera along y axis while character moving with mouse
-        else if (Input.GetMouseButton(0) && Input.touchCount == 0) {
+        if (Input.GetMouseButton(0) && Input.touchCount == 0) {
             transform.Rotate(Vector3.right * -Input.GetAxis("Mouse Y") * camRotationSpeed * Time.deltaTime);
             transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
         }
 
         //controller camera rotation
-        else if (Input.GetAxis(camRotationHorizontal) != 0 || Input.GetAxis(camRotationVertical) != 0) {
+        if (Input.GetAxis(camRotationHorizontal) != 0 || Input.GetAxis(camRotationVertical) != 0) {
             transform.Rotate(Vector3.up * Input.GetAxis(camRotationHorizontal) * camRotationSpeed * Time.deltaTime);
             transform.Rotate(Vector3.right * -Input.GetAxis(camRotationVertical) * camRotationSpeed * Time.deltaTime);
             transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
         }
 
         //touch camera zoom and rotation controls
-        else if (Input.touchCount == 2) {
+        if (Input.touchCount == 2) {
             // Store both touches.
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
