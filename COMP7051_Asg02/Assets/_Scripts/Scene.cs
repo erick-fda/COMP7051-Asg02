@@ -49,22 +49,68 @@ public sealed class Scene : MonoBehaviour
     /*---------------------------------------------------------------------------------------
 		Game Object References
 	---------------------------------------------------------------------------------------*/
-
+    public Material mat_Ground;     /**< The material for the level's ground. */
+    public Material mat_TopWalls;   /**< The material for the maze's top walls. */
+    public Material mat_NorthWalls; /**< The material for the maze's north walls. */
+    public Material mat_SouthWalls; /**< The material for the maze's south walls. */
+    public Material mat_EastWalls;  /**< The material for the maze's east walls. */
+    public Material mat_WestWalls;  /**< The material for the maze's west walls. */
 
     /*---------------------------------------------------------------------------------------
 		Public
 	---------------------------------------------------------------------------------------*/
-    
+    public const float AMBIENT_DAY = 0.7f;  /* Ambient light intensity during the day. */
+    public const float DIFFUSE_DAY = 1.0f;  /* Diffuse light intensity during the day. */
+
+    public const float AMBIENT_NIGHT = 0.2f;    /* Ambient light intensity during the night. */
+    public const float DIFFUSE_NIGHT = 0.4f;    /* Diffuse light intensity during the night. */
 
     /*---------------------------------------------------------------------------------------
 		Private
 	---------------------------------------------------------------------------------------*/
-
+    private bool isDaylit = false;  /**< Is the scene lit by daylight? */
 
     /*=======================================================================================
 		Properties
 	=======================================================================================*/
+    /*
+        Public access property for isDaylit.
+        Private setting only.
 
+        @see isDaylit
+    */
+    public bool IsDaylit
+    {
+        get { return isDaylit; }
+
+        private set
+        {
+            isDaylit = value;
+
+            /* Determine whether to use day or night lighting. */
+            float ambient = (isDaylit) ? AMBIENT_DAY : AMBIENT_NIGHT;
+            float diffuse = (isDaylit) ? DIFFUSE_DAY : DIFFUSE_NIGHT;
+
+            /* Set the day or night lighting for the materials in the scene. */
+            mat_Ground.SetFloat("_AmbientIntensity", ambient);
+            mat_Ground.SetFloat("_DiffuseIntensity", diffuse);
+
+            mat_TopWalls.SetFloat("_AmbientIntensity", ambient);
+            mat_TopWalls.SetFloat("_DiffuseIntensity", diffuse);
+
+            mat_NorthWalls.SetFloat("_AmbientIntensity", ambient);
+            mat_NorthWalls.SetFloat("_DiffuseIntensity", diffuse);
+
+            mat_SouthWalls.SetFloat("_AmbientIntensity", ambient);
+            mat_SouthWalls.SetFloat("_DiffuseIntensity", diffuse);
+
+            mat_EastWalls.SetFloat("_AmbientIntensity", ambient);
+            mat_EastWalls.SetFloat("_DiffuseIntensity", diffuse);
+
+            mat_WestWalls.SetFloat("_AmbientIntensity", ambient);
+            mat_WestWalls.SetFloat("_DiffuseIntensity", diffuse);
+        }
+    }
 
     /*=======================================================================================
 		Methods
@@ -90,22 +136,28 @@ public sealed class Scene : MonoBehaviour
 		Called once before the first frame update.
 		Used for initializing referenced object variables and other values.
 
-        Begins the scene with fog off.
+        Begins the scene with night lighting.
 	*/
     void Start()
     {
-
+        /* Begin the scene with fog on. */
+        IsDaylit = false;
     }
 
     /**
 		Called once per frame.
 		Used for general updating of game values and objects.
 
-        Can toggle fog in the scene.
+        Checks for input to toggle fog.
+        Checks for input to toggle lighting.
 	*/
     void Update()
     {
+        /* Check for input to toggle fog. */
         ToggleFog();
+
+        /* Check for input to toggle lighting. */
+        ToggleLighting();
     }
 
     /**
@@ -132,12 +184,25 @@ public sealed class Scene : MonoBehaviour
     /*
         Toggles fog in the scene.
     */
-    private void ToggleFog()
+    public void ToggleFog(bool assumeInput = false)
     {
         /* Toggle fog if key goes down. */
-        if (IRefs.GetKeyDown(IRefs.Command.ToggleFog))
+        if (assumeInput || 
+            IRefs.GetKeyDown(IRefs.Command.ToggleFog))
         {
             RenderSettings.fog = !RenderSettings.fog;
+        }
+    }
+
+    /*
+        Toggles day/night lighting in the scene.
+    */
+    public void ToggleLighting(bool assumeInput = false)
+    {
+        if (assumeInput ||
+            IRefs.GetKeyDown(IRefs.Command.ToggleLighting))
+        {
+            IsDaylit = !IsDaylit;
         }
     }
 

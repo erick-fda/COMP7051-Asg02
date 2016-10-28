@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,6 +109,7 @@ $(document).ready(function(){initNavTree('class_player_controller.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -130,6 +132,12 @@ Collaboration diagram for PlayerController:</div>
 <div class="center"><img src="class_player_controller__coll__graph.png" border="0" usemap="#_player_controller_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1e50b53148015ea94166dd1826113c2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#a1e50b53148015ea94166dd1826113c2c">toggleDetectCollisions</a> ()</td></tr>
+<tr class="memdesc:a1e50b53148015ea94166dd1826113c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">toggles ability to walk through walls  <a href="#a1e50b53148015ea94166dd1826113c2c">More...</a><br /></td></tr>
+<tr class="separator:a1e50b53148015ea94166dd1826113c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8e425484c120b7efe91e46691f47847e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#a8e425484c120b7efe91e46691f47847e">turnSpeed</a> = 100</td></tr>
@@ -160,6 +168,8 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac646d94772588e3393eb5cb9ac02a5c4"><td class="memItemLeft" align="right" valign="top">Animator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#ac646d94772588e3393eb5cb9ac02a5c4">anim</a></td></tr>
 <tr class="memdesc:ac646d94772588e3393eb5cb9ac02a5c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the animaor that handles the player character's animations  <a href="#ac646d94772588e3393eb5cb9ac02a5c4">More...</a><br /></td></tr>
 <tr class="separator:ac646d94772588e3393eb5cb9ac02a5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e402c51b9deb07bfbc04210a0b1bf10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#a7e402c51b9deb07bfbc04210a0b1bf10">isRunning</a> = false</td></tr>
+<tr class="separator:a7e402c51b9deb07bfbc04210a0b1bf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>control player character movement and animation </p>
@@ -187,6 +197,33 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1e50b53148015ea94166dd1826113c2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.toggleDetectCollisions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>toggles ability to walk through walls </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_controller_a1e50b53148015ea94166dd1826113c2c_icgraph.png" border="0" usemap="#class_player_controller_a1e50b53148015ea94166dd1826113c2c_icgraph" alt=""/></div>
+<map name="class_player_controller_a1e50b53148015ea94166dd1826113c2c_icgraph" id="class_player_controller_a1e50b53148015ea94166dd1826113c2c_icgraph">
+<area shape="rect" id="node2" href="class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43" title="PlayerController.Update" alt="" coords="244,13,403,39"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ae8bc83dffb99867a04be016473ed2c43"></a>
 <div class="memitem">
 <div class="memproto">
@@ -207,6 +244,22 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph.png" border="0" usemap="#class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph" alt=""/></div>
+<map name="class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph" id="class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph">
+<area shape="rect" id="node2" href="class_i_refs.html#ab95590a14075f857596fb231470c0f82" title="Returns true while the requested command is active from a key or joystick button for a specific playe..." alt="" coords="258,56,357,83"/>
+<area shape="rect" id="node5" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="242,107,373,133"/>
+<area shape="rect" id="node8" href="class_player_controller.html#a1e50b53148015ea94166dd1826113c2c" title="toggles ability to walk through walls " alt="" coords="212,158,403,199"/>
+<area shape="rect" id="node3" href="class_i_refs.html#a7c4ffa56431c7d499c60f2ee7b973a60" title="Returns true while the requested command is active from a keyboard or mouse key for a specific player..." alt="" coords="471,5,625,32"/>
+<area shape="rect" id="node4" href="class_i_refs.html#a460145658fc93246db843dcbeeff329c" title="Returns true while the requested command is active from a joystick button for a specific player..." alt="" coords="467,56,629,83"/>
+<area shape="rect" id="node6" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="455,107,641,133"/>
+<area shape="rect" id="node7" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="451,157,645,184"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -252,6 +305,26 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>is the player able to walk through walls </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e402c51b9deb07bfbc04210a0b1bf10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerController.isRunning = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

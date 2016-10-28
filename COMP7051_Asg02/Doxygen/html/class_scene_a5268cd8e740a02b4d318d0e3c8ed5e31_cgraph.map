@@ -1,0 +1,5 @@
+<map id="Scene.ToggleFog" name="Scene.ToggleFog">
+<area shape="rect" id="node2" href="$class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="176,31,307,57"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="359,5,545,32"/>
+<area shape="rect" id="node4" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="355,56,549,83"/>
+</map>

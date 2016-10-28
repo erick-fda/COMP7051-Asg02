@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -100,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
@@ -143,9 +145,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>AMBIENT_DAY
 : <a class="el" href="class_day_night.html#a074e40b029a2f3f317a4649b0da1238a">DayNight</a>
+, <a class="el" href="class_scene.html#a1c45244df75f8d3cf79351180eb47dd2">Scene</a>
 </li>
 <li>AMBIENT_NIGHT
 : <a class="el" href="class_day_night.html#afd2a3229db4604fb3b75af25eb37fa54">DayNight</a>
+, <a class="el" href="class_scene.html#a3512a6c43bbef041f6dd7aa654d2ef76">Scene</a>
 </li>
 <li>anim
 : <a class="el" href="class_monster_controller.html#a2988cc7b584d05a49a4db374102eb9cf">MonsterController</a>
@@ -166,8 +170,17 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>cam
 : <a class="el" href="class_camera_controller.html#ac1525290b1ff45e8911b5c35cd869d66">CameraController</a>
 </li>
+<li>camRotationHorizontal
+: <a class="el" href="class_camera_controller.html#a0eea4dedd5587171fb4f1166228ff235">CameraController</a>
+</li>
 <li>camRotationSpeed
 : <a class="el" href="class_camera_controller.html#a3c5357fcb8482d2659139768fffd26de">CameraController</a>
+</li>
+<li>camRotationVertical
+: <a class="el" href="class_camera_controller.html#a8e81fdf78a0428b370a39b095b6e5ac3">CameraController</a>
+</li>
+<li>closeMenu()
+: <a class="el" href="class_menu_manager.html#a0008e90114ea4d56f9a0085c8101836c">MenuManager</a>
 </li>
 <li>Command
 : <a class="el" href="class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7">IRefs</a>
@@ -184,9 +197,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>DIFFUSE_DAY
 : <a class="el" href="class_day_night.html#a9202cbf10ea101b981d9ceb031d9a6e2">DayNight</a>
+, <a class="el" href="class_scene.html#ad437d7bc9c3e2e9f2b557cc2395985e1">Scene</a>
 </li>
 <li>DIFFUSE_NIGHT
 : <a class="el" href="class_day_night.html#a3053170502961b3187e69a4eab63b323">DayNight</a>
+, <a class="el" href="class_scene.html#a0f292529bb3684d20b721e2af8c4d21f">Scene</a>
 </li>
 <li>DominantAxisOf()
 : <a class="el" href="class_i_refs.html#a642a98b6369b2b85290767868e63c6d0">IRefs</a>
@@ -273,11 +288,18 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>Instance
 : <a class="el" href="class_scene.html#a1fc77e041e23e2b4547cc1bad1bf9f00">Scene</a>
 </li>
-<li>isDaylit
-: <a class="el" href="class_day_night.html#a0be67d0d6098931eb7ac619499ca7c16">DayNight</a>
-</li>
 <li>IsDaylit
 : <a class="el" href="class_day_night.html#a60e359df6fc3ac9317b1a5f935519623">DayNight</a>
+</li>
+<li>isDaylit
+: <a class="el" href="class_day_night.html#a0be67d0d6098931eb7ac619499ca7c16">DayNight</a>
+, <a class="el" href="class_scene.html#a0d9418ec5e964063eef1b7023185419a">Scene</a>
+</li>
+<li>IsDaylit
+: <a class="el" href="class_scene.html#a34ef2decf52555d5dce05fe253e873e2">Scene</a>
+</li>
+<li>isRunning
+: <a class="el" href="class_player_controller.html#a7e402c51b9deb07bfbc04210a0b1bf10">PlayerController</a>
 </li>
 </ul>
 
@@ -313,8 +335,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>LateUpdate()
-: <a class="el" href="class_camera_controller.html#afcd241727886518c21b9609193e32d18">CameraController</a>
-, <a class="el" href="class_day_night.html#a6865616e3f6fe6e229419261e1617607">DayNight</a>
+: <a class="el" href="class_day_night.html#a6865616e3f6fe6e229419261e1617607">DayNight</a>
 , <a class="el" href="class_debug_camera_controller.html#afec639a172cc12f4058eb9ecaf28bc7c">DebugCameraController</a>
 , <a class="el" href="class_scene.html#aae8692dd9cfe6710e866e640c0f37231">Scene</a>
 </li>
@@ -322,8 +343,32 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>mat_EastWalls
+: <a class="el" href="class_scene.html#a371e652cc39fb562103fcaa3b44d689f">Scene</a>
+</li>
+<li>mat_Ground
+: <a class="el" href="class_scene.html#ad7e84cdf4a0a13f50cd0ba4a776407f3">Scene</a>
+</li>
+<li>mat_NorthWalls
+: <a class="el" href="class_scene.html#ad1bf6497574fafed120e68ae53e960a9">Scene</a>
+</li>
+<li>mat_SouthWalls
+: <a class="el" href="class_scene.html#a85e06c8ee88c2b48102fb6373a85eb81">Scene</a>
+</li>
+<li>mat_TopWalls
+: <a class="el" href="class_scene.html#a9ed7dfe49fecf6cb3370b634662df8eb">Scene</a>
+</li>
+<li>mat_WestWalls
+: <a class="el" href="class_scene.html#a1662369bcbb0579a149ba827428ada4f">Scene</a>
+</li>
 <li>maxZoom
 : <a class="el" href="class_camera_controller.html#a5ede1338f553ab75fb61f85405fda8e7">CameraController</a>
+</li>
+<li>MenuButton
+: <a class="el" href="class_menu_manager.html#a1bbd7b853983759b09f71384e467c45b">MenuManager</a>
+</li>
+<li>MenuPanel
+: <a class="el" href="class_menu_manager.html#a56eed8207a99296bd5578768e79b6d02">MenuManager</a>
 </li>
 <li>minZoom
 : <a class="el" href="class_camera_controller.html#a6c1a8c2ca7e67154970931ed2a88563e">CameraController</a>
@@ -338,16 +383,28 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>OnCollisionStay()
 : <a class="el" href="class_monster_controller.html#a0c95aa10211ee2892fe94ca9ce4f70db">MonsterController</a>
 </li>
+<li>openMenu()
+: <a class="el" href="class_menu_manager.html#a34d8c17fedeb291b5ce4dcb1e3833692">MenuManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>quitGame()
+: <a class="el" href="class_menu_manager.html#a73a2d4d7508891011204c27aa40b20d8">MenuManager</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>rb
-: <a class="el" href="class_monster_controller.html#a973aca9ffb7abc404da6f24dca70886d">MonsterController</a>
-, <a class="el" href="class_player_controller.html#a93b9fa76e5456725594e87dd40f93611">PlayerController</a>
+: <a class="el" href="class_player_controller.html#a93b9fa76e5456725594e87dd40f93611">PlayerController</a>
 </li>
 <li>resetScene()
-: <a class="el" href="class_scene.html#a16227557e6f919fa4272a819efe527d9">Scene</a>
+: <a class="el" href="class_menu_manager.html#a6d28ebe295f0fc5dbc13c43215297190">MenuManager</a>
+</li>
+<li>resetSceneControls()
+: <a class="el" href="class_menu_manager.html#ab44537e5fe3678c6d96c94c568d614e4">MenuManager</a>
 </li>
 <li>runSpeed
 : <a class="el" href="class_player_controller.html#a40299964fecfbf0ca1399d7ca1cb27b9">PlayerController</a>
@@ -363,6 +420,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_camera_controller.html#ad4a238c6f7db3ee003302a245d860860">CameraController</a>
 , <a class="el" href="class_day_night.html#ad1b191a7c6e432f737aaec62224240c1">DayNight</a>
 , <a class="el" href="class_debug_camera_controller.html#aa2a2ad88e5c2717136eec7348530b2a1">DebugCameraController</a>
+, <a class="el" href="class_menu_manager.html#a479846feaf36055dc2dbb44cb374f015">MenuManager</a>
 , <a class="el" href="class_monster_controller.html#a0875c3b2f40968c96da92f82ba58abfa">MonsterController</a>
 , <a class="el" href="class_player_controller.html#ae1117d9c4da3193181cddad2c814e467">PlayerController</a>
 , <a class="el" href="class_scene.html#ac3a567b103bd5d3590b85747b7672380">Scene</a>
@@ -374,11 +432,18 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>timeSinceCollision
 : <a class="el" href="class_monster_controller.html#a410618c2fb16489d35762cecdfed1e24">MonsterController</a>
 </li>
+<li>timeSinceTap
+: <a class="el" href="class_menu_manager.html#a232af72a13066c4efca09f09b7a8b91e">MenuManager</a>
+</li>
+<li>toggleDetectCollisions()
+: <a class="el" href="class_player_controller.html#a1e50b53148015ea94166dd1826113c2c">PlayerController</a>
+</li>
 <li>ToggleFog()
-: <a class="el" href="class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11">Scene</a>
+: <a class="el" href="class_scene.html#a5268cd8e740a02b4d318d0e3c8ed5e31">Scene</a>
 </li>
 <li>ToggleLighting()
 : <a class="el" href="class_day_night.html#a5f89e325d4fae6d6db2ad77902d82f86">DayNight</a>
+, <a class="el" href="class_scene.html#af157e7d0b8c1e1a0df54b47bdd9d3572">Scene</a>
 </li>
 <li>turnDirection
 : <a class="el" href="class_monster_controller.html#aed2e6d8699802d545916a45f0184d27e">MonsterController</a>
@@ -404,6 +469,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_camera_controller.html#a7c4f486f4bcbd1d54a346fdce9707bd5">CameraController</a>
 , <a class="el" href="class_day_night.html#a47b6d77ec116a56b1b78311f0e8e3d6b">DayNight</a>
 , <a class="el" href="class_debug_camera_controller.html#a4eb325fbf242d61950d0f4bf05aa8e50">DebugCameraController</a>
+, <a class="el" href="class_menu_manager.html#a03b8675f75855fc897134409bd2685fe">MenuManager</a>
 , <a class="el" href="class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43">PlayerController</a>
 , <a class="el" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95">Scene</a>
 </li>

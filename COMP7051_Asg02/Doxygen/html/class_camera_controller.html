@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -110,6 +111,7 @@ $(document).ready(function(){initNavTree('class_camera_controller.html','');});
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_camera_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CameraController Class Reference</div>  </div>
@@ -149,33 +151,17 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ad4a238c6f7db3ee003302a245d860860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4f486f4bcbd1d54a346fdce9707bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a7c4f486f4bcbd1d54a346fdce9707bd5">Update</a> ()</td></tr>
 <tr class="separator:a7c4f486f4bcbd1d54a346fdce9707bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd241727886518c21b9609193e32d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#afcd241727886518c21b9609193e32d18">LateUpdate</a> ()</td></tr>
-<tr class="separator:afcd241727886518c21b9609193e32d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0eea4dedd5587171fb4f1166228ff235"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a0eea4dedd5587171fb4f1166228ff235">camRotationHorizontal</a> = &quot;CamRotationHorizontal&quot;</td></tr>
+<tr class="memdesc:a0eea4dedd5587171fb4f1166228ff235"><td class="mdescLeft">&#160;</td><td class="mdescRight">horizontal camera rotation axis name  <a href="#a0eea4dedd5587171fb4f1166228ff235">More...</a><br /></td></tr>
+<tr class="separator:a0eea4dedd5587171fb4f1166228ff235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e81fdf78a0428b370a39b095b6e5ac3"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a8e81fdf78a0428b370a39b095b6e5ac3">camRotationVertical</a> = &quot;CamRotationVertical&quot;</td></tr>
+<tr class="memdesc:a8e81fdf78a0428b370a39b095b6e5ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">horizontal camera rotation axis name  <a href="#a8e81fdf78a0428b370a39b095b6e5ac3">More...</a><br /></td></tr>
+<tr class="separator:a8e81fdf78a0428b370a39b095b6e5ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afcd241727886518c21b9609193e32d18"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CameraController.LateUpdate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ad4a238c6f7db3ee003302a245d860860"></a>
 <div class="memitem">
 <div class="memproto">
@@ -237,6 +223,28 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0eea4dedd5587171fb4f1166228ff235"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String CameraController.camRotationHorizontal = &quot;CamRotationHorizontal&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>horizontal camera rotation axis name </p>
+
+</div>
+</div>
 <a class="anchor" id="a3c5357fcb8482d2659139768fffd26de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -248,6 +256,28 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>how sensitive the camera rotation is </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e81fdf78a0428b370a39b095b6e5ac3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String CameraController.camRotationVertical = &quot;CamRotationVertical&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>horizontal camera rotation axis name </p>
 
 </div>
 </div>

@@ -118,7 +118,7 @@ public static class IRefs
         /* Player 1 Commands */
         {CommandStrings[Command.ToggleLighting] + 1,    JoystickButton.B_P1},
         {CommandStrings[Command.ToggleFog] + 1,         JoystickButton.A_P1},
-        {CommandStrings[Command.ToggleWalkThroughWalls] + 1,         JoystickButton.X_P1},
+        {CommandStrings[Command.ToggleWalkThroughWalls] + 1,         JoystickButton.Y_P1},
         {CommandStrings[Command.ResetGame] + 1,         JoystickButton.Start_P1},
         {CommandStrings[Command.PlayerRun] + 1,         JoystickButton.LeftBumper_P1},
     };
