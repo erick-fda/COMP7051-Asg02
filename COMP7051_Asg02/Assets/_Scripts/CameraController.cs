@@ -30,18 +30,14 @@ public class CameraController : MonoBehaviour {
         if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXEditor) {
             camRotationHorizontal += "_OSX";
             camRotationVertical += "_OSX";
-        } else {
+        }
+        else {
             camRotationHorizontal += "_WinLin";
             camRotationVertical += "_WinLin";
         }
     }
 
-    // Update is called once per frame
     void Update() {
-
-    }
-
-    void LateUpdate() {
         float camDistance = Vector3.Distance(cam.position, transform.position);
 
         //mouse zoom controls
@@ -70,7 +66,7 @@ public class CameraController : MonoBehaviour {
         }
 
         //touch camera zoom and rotation controls
-        if (Input.touchCount == 2) {
+        if (Input.touchCount > 1) {
             // Store both touches.
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
@@ -84,18 +80,19 @@ public class CameraController : MonoBehaviour {
             float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
 
             // Find the difference in the distances between each frame.
-            float deltaMagnitudeDiff = (prevTouchDeltaMag - touchDeltaMag) / (Screen.height * .05f);
-            if (Math.Abs(deltaMagnitudeDiff) > .02f) {
+            float deltaMagnitudeDiff = (prevTouchDeltaMag - touchDeltaMag) / (Screen.height * .01f);
+            if (Math.Abs(deltaMagnitudeDiff) > .01f) {
                 if ((deltaMagnitudeDiff < 0 && camDistance > minZoom) || (deltaMagnitudeDiff > 0 && camDistance < maxZoom))
-                    cam.Translate(cam.forward * -deltaMagnitudeDiff * 1f * zoomSpeed * Time.deltaTime, Space.World);
-            } else {
-                transform.Rotate(Vector3.up * touchZero.deltaPosition.normalized.x * camRotationSpeed * Time.deltaTime);
-                transform.Rotate(Vector3.right * touchZero.deltaPosition.normalized.y * camRotationSpeed * Time.deltaTime);
+                    cam.Translate(cam.forward * -deltaMagnitudeDiff * zoomSpeed * Time.deltaTime, Space.World);
+            }
+            else {
+                transform.Rotate(Vector3.up * touchZero.deltaPosition.normalized.x * .05f * camRotationSpeed * Time.deltaTime);
+                transform.Rotate(Vector3.right * touchZero.deltaPosition.normalized.y * .05f * camRotationSpeed * Time.deltaTime);
                 transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
             }
 
-        } 
-            
+        }
+
 
     }
 }
