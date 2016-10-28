@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,8 +109,11 @@ $(document).ready(function(){initNavTree('class_scene.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -130,11 +134,49 @@ Collaboration diagram for Scene:</div>
 <div class="center"><img src="class_scene__coll__graph.png" border="0" usemap="#_scene_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5268cd8e740a02b4d318d0e3c8ed5e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a5268cd8e740a02b4d318d0e3c8ed5e31">ToggleFog</a> (bool assumeInput=false)</td></tr>
+<tr class="separator:a5268cd8e740a02b4d318d0e3c8ed5e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af157e7d0b8c1e1a0df54b47bdd9d3572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#af157e7d0b8c1e1a0df54b47bdd9d3572">ToggleLighting</a> (bool assumeInput=false)</td></tr>
+<tr class="separator:af157e7d0b8c1e1a0df54b47bdd9d3572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad7e84cdf4a0a13f50cd0ba4a776407f3"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ad7e84cdf4a0a13f50cd0ba4a776407f3">mat_Ground</a></td></tr>
+<tr class="memdesc:ad7e84cdf4a0a13f50cd0ba4a776407f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the level's ground.  <a href="#ad7e84cdf4a0a13f50cd0ba4a776407f3">More...</a><br /></td></tr>
+<tr class="separator:ad7e84cdf4a0a13f50cd0ba4a776407f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed7dfe49fecf6cb3370b634662df8eb"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a9ed7dfe49fecf6cb3370b634662df8eb">mat_TopWalls</a></td></tr>
+<tr class="memdesc:a9ed7dfe49fecf6cb3370b634662df8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the maze's top walls.  <a href="#a9ed7dfe49fecf6cb3370b634662df8eb">More...</a><br /></td></tr>
+<tr class="separator:a9ed7dfe49fecf6cb3370b634662df8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1bf6497574fafed120e68ae53e960a9"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ad1bf6497574fafed120e68ae53e960a9">mat_NorthWalls</a></td></tr>
+<tr class="memdesc:ad1bf6497574fafed120e68ae53e960a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the maze's north walls.  <a href="#ad1bf6497574fafed120e68ae53e960a9">More...</a><br /></td></tr>
+<tr class="separator:ad1bf6497574fafed120e68ae53e960a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e06c8ee88c2b48102fb6373a85eb81"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a85e06c8ee88c2b48102fb6373a85eb81">mat_SouthWalls</a></td></tr>
+<tr class="memdesc:a85e06c8ee88c2b48102fb6373a85eb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the maze's south walls.  <a href="#a85e06c8ee88c2b48102fb6373a85eb81">More...</a><br /></td></tr>
+<tr class="separator:a85e06c8ee88c2b48102fb6373a85eb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371e652cc39fb562103fcaa3b44d689f"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a371e652cc39fb562103fcaa3b44d689f">mat_EastWalls</a></td></tr>
+<tr class="memdesc:a371e652cc39fb562103fcaa3b44d689f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the maze's east walls.  <a href="#a371e652cc39fb562103fcaa3b44d689f">More...</a><br /></td></tr>
+<tr class="separator:a371e652cc39fb562103fcaa3b44d689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1662369bcbb0579a149ba827428ada4f"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1662369bcbb0579a149ba827428ada4f">mat_WestWalls</a></td></tr>
+<tr class="memdesc:a1662369bcbb0579a149ba827428ada4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the maze's west walls.  <a href="#a1662369bcbb0579a149ba827428ada4f">More...</a><br /></td></tr>
+<tr class="separator:a1662369bcbb0579a149ba827428ada4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c45244df75f8d3cf79351180eb47dd2"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1c45244df75f8d3cf79351180eb47dd2">AMBIENT_DAY</a> = 0.7f</td></tr>
+<tr class="separator:a1c45244df75f8d3cf79351180eb47dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad437d7bc9c3e2e9f2b557cc2395985e1"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ad437d7bc9c3e2e9f2b557cc2395985e1">DIFFUSE_DAY</a> = 1.0f</td></tr>
+<tr class="separator:ad437d7bc9c3e2e9f2b557cc2395985e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3512a6c43bbef041f6dd7aa654d2ef76"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a3512a6c43bbef041f6dd7aa654d2ef76">AMBIENT_NIGHT</a> = 0.2f</td></tr>
+<tr class="separator:a3512a6c43bbef041f6dd7aa654d2ef76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f292529bb3684d20b721e2af8c4d21f"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a0f292529bb3684d20b721e2af8c4d21f">DIFFUSE_NIGHT</a> = 0.4f</td></tr>
+<tr class="separator:a0f292529bb3684d20b721e2af8c4d21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a1fc77e041e23e2b4547cc1bad1bf9f00"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_scene.html">Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1fc77e041e23e2b4547cc1bad1bf9f00">Instance</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a1fc77e041e23e2b4547cc1bad1bf9f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public access property for <a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9" title="Private static Scene instance. ">Scene.instance</a>.  <a href="#a1fc77e041e23e2b4547cc1bad1bf9f00">More...</a><br /></td></tr>
 <tr class="separator:a1fc77e041e23e2b4547cc1bad1bf9f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ef2decf52555d5dce05fe253e873e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a34ef2decf52555d5dce05fe253e873e2">IsDaylit</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a34ef2decf52555d5dce05fe253e873e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -153,13 +195,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aae8692dd9cfe6710e866e640c0f37231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aae8692dd9cfe6710e866e640c0f37231">LateUpdate</a> ()</td></tr>
 <tr class="memdesc:aae8692dd9cfe6710e866e640c0f37231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after all <a class="el" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. ">Update()</a> calculations have been performed.  <a href="#aae8692dd9cfe6710e866e640c0f37231">More...</a><br /></td></tr>
 <tr class="separator:aae8692dd9cfe6710e866e640c0f37231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb99cd37ee6d74865bfa54d3fc22d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11">ToggleFog</a> ()</td></tr>
-<tr class="separator:a7bb99cd37ee6d74865bfa54d3fc22d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16227557e6f919fa4272a819efe527d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a16227557e6f919fa4272a819efe527d9">resetScene</a> ()</td></tr>
-<tr class="separator:a16227557e6f919fa4272a819efe527d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f4b7d33220c65d1894281b23a51139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a10f4b7d33220c65d1894281b23a51139">EnforceSingleton</a> ()</td></tr>
 <tr class="memdesc:a10f4b7d33220c65d1894281b23a51139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>.  <a href="#a10f4b7d33220c65d1894281b23a51139">More...</a><br /></td></tr>
 <tr class="separator:a10f4b7d33220c65d1894281b23a51139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0d9418ec5e964063eef1b7023185419a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a0d9418ec5e964063eef1b7023185419a">isDaylit</a> = false</td></tr>
+<tr class="memdesc:a0d9418ec5e964063eef1b7023185419a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the scene lit by daylight?  <a href="#a0d9418ec5e964063eef1b7023185419a">More...</a><br /></td></tr>
+<tr class="separator:a0d9418ec5e964063eef1b7023185419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -295,39 +339,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a16227557e6f919fa4272a819efe527d9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Scene.resetScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_scene_a16227557e6f919fa4272a819efe527d9_icgraph.png" border="0" usemap="#class_scene_a16227557e6f919fa4272a819efe527d9_icgraph" alt=""/></div>
-<map name="class_scene_a16227557e6f919fa4272a819efe527d9_icgraph" id="class_scene_a16227557e6f919fa4272a819efe527d9_icgraph">
-<area shape="rect" id="node2" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. " alt="" coords="183,5,287,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="ac3a567b103bd5d3590b85747b7672380"></a>
 <div class="memitem">
 <div class="memproto">
@@ -351,36 +362,29 @@ Here is the caller graph for this function:</div>
 
 <p>Called once before the first frame update. </p>
 <p>Used for initializing referenced object variables and other values.</p>
-<p>Begins the scene with fog off. </p>
+<p>Begins the scene with night lighting. </p>
 
 </div>
 </div>
-<a class="anchor" id="a7bb99cd37ee6d74865bfa54d3fc22d11"></a>
+<a class="anchor" id="a5268cd8e740a02b4d318d0e3c8ed5e31"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Scene.ToggleFog </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assumeInput</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph.png" border="0" usemap="#class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph" alt=""/></div>
-<map name="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph" id="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_cgraph">
+<div class="center"><img src="class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_cgraph.png" border="0" usemap="#class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_cgraph" alt=""/></div>
+<map name="class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_cgraph" id="class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_cgraph">
 <area shape="rect" id="node2" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="176,31,307,57"/>
 <area shape="rect" id="node3" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="359,5,545,32"/>
 <area shape="rect" id="node4" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="355,56,549,83"/>
@@ -391,9 +395,47 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_icgraph.png" border="0" usemap="#class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_icgraph" alt=""/></div>
-<map name="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_icgraph" id="class_scene_a7bb99cd37ee6d74865bfa54d3fc22d11_icgraph">
+<div class="center"><img src="class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_icgraph.png" border="0" usemap="#class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_icgraph" alt=""/></div>
+<map name="class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_icgraph" id="class_scene_a5268cd8e740a02b4d318d0e3c8ed5e31_icgraph">
 <area shape="rect" id="node2" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. " alt="" coords="176,5,280,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af157e7d0b8c1e1a0df54b47bdd9d3572"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene.ToggleLighting </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assumeInput</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_cgraph.png" border="0" usemap="#class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_cgraph" alt=""/></div>
+<map name="class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_cgraph" id="class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_cgraph">
+<area shape="rect" id="node2" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="200,31,331,57"/>
+<area shape="rect" id="node3" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="383,5,569,32"/>
+<area shape="rect" id="node4" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="379,56,573,83"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_icgraph.png" border="0" usemap="#class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_icgraph" alt=""/></div>
+<map name="class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_icgraph" id="class_scene_af157e7d0b8c1e1a0df54b47bdd9d3572_icgraph">
+<area shape="rect" id="node2" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. " alt="" coords="200,5,304,32"/>
 </map>
 </div>
 </p>
@@ -423,18 +465,18 @@ Here is the caller graph for this function:</div>
 
 <p>Called once per frame. </p>
 <p>Used for general updating of game values and objects.</p>
-<p>Can toggle fog in the scene. </p>
+<p>Checks for input to toggle fog. Checks for input to toggle lighting. </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph.png" border="0" usemap="#class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph" alt=""/></div>
 <map name="class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph" id="class_scene_a5b82e1c2ead9385c3ddd81bb54440f95_cgraph">
-<area shape="rect" id="node2" href="class_scene.html#a7bb99cd37ee6d74865bfa54d3fc22d11" title="Scene.ToggleFog" alt="" coords="161,31,283,57"/>
-<area shape="rect" id="node6" href="class_scene.html#a16227557e6f919fa4272a819efe527d9" title="Scene.resetScene" alt="" coords="157,81,287,108"/>
-<area shape="rect" id="node3" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="335,31,465,57"/>
-<area shape="rect" id="node4" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="517,5,704,32"/>
-<area shape="rect" id="node5" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="513,56,708,83"/>
+<area shape="rect" id="node2" href="class_scene.html#a5268cd8e740a02b4d318d0e3c8ed5e31" title="Scene.ToggleFog" alt="" coords="169,5,292,32"/>
+<area shape="rect" id="node6" href="class_scene.html#af157e7d0b8c1e1a0df54b47bdd9d3572" title="Scene.ToggleLighting" alt="" coords="157,56,304,83"/>
+<area shape="rect" id="node3" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="352,31,483,57"/>
+<area shape="rect" id="node4" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="535,5,721,32"/>
+<area shape="rect" id="node5" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="531,56,725,83"/>
 </map>
 </div>
 </p>
@@ -442,6 +484,54 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1c45244df75f8d3cf79351180eb47dd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Scene.AMBIENT_DAY = 0.7f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3512a6c43bbef041f6dd7aa654d2ef76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Scene.AMBIENT_NIGHT = 0.2f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad437d7bc9c3e2e9f2b557cc2395985e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Scene.DIFFUSE_DAY = 1.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f292529bb3684d20b721e2af8c4d21f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Scene.DIFFUSE_NIGHT = 0.4f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac45c42a9eedd3201b1d83e7e26e10ab9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -461,6 +551,112 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a> instance. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d9418ec5e964063eef1b7023185419a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene.isDaylit = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the scene lit by daylight? </p>
+
+</div>
+</div>
+<a class="anchor" id="a371e652cc39fb562103fcaa3b44d689f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material Scene.mat_EastWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The material for the maze's east walls. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad7e84cdf4a0a13f50cd0ba4a776407f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material Scene.mat_Ground</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The material for the level's ground. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1bf6497574fafed120e68ae53e960a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material Scene.mat_NorthWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The material for the maze's north walls. </p>
+
+</div>
+</div>
+<a class="anchor" id="a85e06c8ee88c2b48102fb6373a85eb81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material Scene.mat_SouthWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The material for the maze's south walls. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ed7dfe49fecf6cb3370b634662df8eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material Scene.mat_TopWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The material for the maze's top walls. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1662369bcbb0579a149ba827428ada4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material Scene.mat_WestWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The material for the maze's west walls. </p>
 
 </div>
 </div>
@@ -485,6 +681,26 @@ Here is the call graph for this function:</div>
 
 <p>Public access property for <a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9" title="Private static Scene instance. ">Scene.instance</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9" title="Private static Scene instance. ">Scene.instance</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a34ef2decf52555d5dce05fe253e873e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene.IsDaylit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -1,0 +1,4 @@
+<map id="MenuManager.resetScene" name="MenuManager.resetScene">
+<area shape="rect" id="node2" href="$class_menu_manager.html#ab44537e5fe3678c6d96c94c568d614e4" title="manages user input for scene resetting " alt="" coords="228,5,451,32"/>
+<area shape="rect" id="node3" href="$class_menu_manager.html#a03b8675f75855fc897134409bd2685fe" title="MenuManager.Update" alt="" coords="499,5,648,32"/>
+</map>

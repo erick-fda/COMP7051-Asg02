@@ -1,3 +1,4 @@
 <map id="IRefs.GetJoystickButton" name="IRefs.GetJoystickButton">
 <area shape="rect" id="node2" href="$class_i_refs.html#ab95590a14075f857596fb231470c0f82" title="Returns true while the requested command is active from a key or joystick button for a specific playe..." alt="" coords="216,5,315,32"/>
+<area shape="rect" id="node3" href="$class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43" title="PlayerController.Update" alt="" coords="363,5,521,32"/>
 </map>

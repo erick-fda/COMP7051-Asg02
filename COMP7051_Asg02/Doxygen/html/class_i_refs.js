@@ -3,7 +3,10 @@ var class_i_refs =
     [ "UnsupportedPlatformException", "class_i_refs_1_1_unsupported_platform_exception.html", "class_i_refs_1_1_unsupported_platform_exception" ],
     [ "Command", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7", [
       [ "ToggleLighting", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a0ad39ad6d4ff3672e2521d83acc7a31a", null ],
-      [ "ToggleFog", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a9407de2142f3c56b81cdc93113b08a22", null ]
+      [ "ToggleFog", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a9407de2142f3c56b81cdc93113b08a22", null ],
+      [ "ToggleWalkThroughWalls", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a7c4fd2d10deaa833badf2e16cd43a0b3", null ],
+      [ "ResetGame", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a3e4d8672287eb4ed915169dc93b0c728", null ],
+      [ "PlayerRun", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a3b19041e8dffa22ab55c5ebb7272de58", null ]
     ] ],
     [ "InputSource", "class_i_refs.html#a9d1f3e8e9c6120972f1934acd6395628", [
       [ "None", "class_i_refs.html#a9d1f3e8e9c6120972f1934acd6395628a6adf97f83acf6453d4a6a4b1070f3754", null ],

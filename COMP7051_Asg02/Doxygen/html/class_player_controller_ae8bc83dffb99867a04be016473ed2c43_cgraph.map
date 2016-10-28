@@ -1,0 +1,9 @@
+<map id="PlayerController.Update" name="PlayerController.Update">
+<area shape="rect" id="node2" href="$class_i_refs.html#ab95590a14075f857596fb231470c0f82" title="Returns true while the requested command is active from a key or joystick button for a specific playe..." alt="" coords="258,56,357,83"/>
+<area shape="rect" id="node5" href="$class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="242,107,373,133"/>
+<area shape="rect" id="node8" href="$class_player_controller.html#a1e50b53148015ea94166dd1826113c2c" title="toggles ability to walk through walls " alt="" coords="212,158,403,199"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a7c4ffa56431c7d499c60f2ee7b973a60" title="Returns true while the requested command is active from a keyboard or mouse key for a specific player..." alt="" coords="471,5,625,32"/>
+<area shape="rect" id="node4" href="$class_i_refs.html#a460145658fc93246db843dcbeeff329c" title="Returns true while the requested command is active from a joystick button for a specific player..." alt="" coords="467,56,629,83"/>
+<area shape="rect" id="node6" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="455,107,641,133"/>
+<area shape="rect" id="node7" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="451,157,645,184"/>
+</map>

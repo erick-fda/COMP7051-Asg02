@@ -1,6 +1,7 @@
 ﻿/*===========================================================================================
     DayNight                                                                            *//**
-	
+	@deprecated
+
 	Toggles day/night lighting for a GameObject's renderer.
     To be used with the "Day and Night" shader.
 	
@@ -19,6 +20,8 @@ using UnityEngine;
 	DayNight
 ===========================================================================================*/
 /**
+    @deprecated
+
 	Toggles day/night lighting for a GameObject's renderer.
     To be used with the "Day and Night" shader.
 */
