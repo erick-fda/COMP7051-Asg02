@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class CameraController : MonoBehaviour {
     /**the camera to be moved*/
@@ -17,26 +18,81 @@ public class CameraController : MonoBehaviour {
     /**the furthest you can zoom out*/
     public float maxZoom = 50;
 
+    /**horizontal camera rotation axis name*/
+    private String camRotationHorizontal = "CamRotationHorizontal";
+
+    /**horizontal camera rotation axis name*/
+    private String camRotationVertical = "CamRotationVertical";
+
     // Use this for initialization
     void Start() {
-       
-       
-    }
-
-    // Update is called once per frame
-    void Update() {
-       float camDistance = Vector3.Distance(cam.position, transform.position);
-        if ((Input.GetAxis("Zoom") < 0 && camDistance > minZoom) || (Input.GetAxis("Zoom") > 0 && camDistance < maxZoom)) {
-            cam.Translate(cam.forward * -Input.GetAxis("Zoom") * zoomSpeed * Time.deltaTime, Space.World);
+        //detect platform and set approptiate camera movement axis control
+        if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXEditor) {
+            camRotationHorizontal += "_OSX";
+            camRotationVertical += "_OSX";
+        }
+        else {
+            camRotationHorizontal += "_WinLin";
+            camRotationVertical += "_WinLin";
         }
     }
 
-    void LateUpdate() {
-        if (Input.GetAxis("CamRotate") != 0) {
+    void Update() {
+        float camDistance = Vector3.Distance(cam.position, transform.position);
+
+        //mouse zoom controls
+        if ((Input.GetAxis("Zoom") < 0 && camDistance > minZoom) || (Input.GetAxis("Zoom") > 0 && camDistance < maxZoom)) {
+            cam.Translate(cam.forward * -Input.GetAxis("Zoom") * zoomSpeed * Time.deltaTime, Space.World);
+        }
+
+        //mouse camera rotation control
+        if (Input.GetMouseButton(1)) {
             transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * camRotationSpeed * Time.deltaTime);
             transform.Rotate(Vector3.right * -Input.GetAxis("Mouse Y") * camRotationSpeed * Time.deltaTime);
             transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
         }
+
+        //rotate camera along y axis while character moving with mouse
+        if (Input.GetMouseButton(0) && Input.touchCount == 0) {
+            transform.Rotate(Vector3.right * -Input.GetAxis("Mouse Y") * camRotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
+        }
+
+        //controller camera rotation
+        if (Input.GetAxis(camRotationHorizontal) != 0 || Input.GetAxis(camRotationVertical) != 0) {
+            transform.Rotate(Vector3.up * Input.GetAxis(camRotationHorizontal) * camRotationSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.right * -Input.GetAxis(camRotationVertical) * camRotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
+        }
+
+        //touch camera zoom and rotation controls
+        if (Input.touchCount > 1) {
+            // Store both touches.
+            Touch touchZero = Input.GetTouch(0);
+            Touch touchOne = Input.GetTouch(1);
+
+            // Find the position in the previous frame of each touch.
+            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+
+            // Find the magnitude of the vector (the distance) between the touches in each frame.
+            float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+            float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
+
+            // Find the difference in the distances between each frame.
+            float deltaMagnitudeDiff = (prevTouchDeltaMag - touchDeltaMag) / (Screen.height * .01f);
+            if (Math.Abs(deltaMagnitudeDiff) > .01f) {
+                if ((deltaMagnitudeDiff < 0 && camDistance > minZoom) || (deltaMagnitudeDiff > 0 && camDistance < maxZoom))
+                    cam.Translate(cam.forward * -deltaMagnitudeDiff * zoomSpeed * Time.deltaTime, Space.World);
+            }
+            else {
+                transform.Rotate(Vector3.up * touchZero.deltaPosition.normalized.x * .05f * camRotationSpeed * Time.deltaTime);
+                transform.Rotate(Vector3.right * touchZero.deltaPosition.normalized.y * .05f * camRotationSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
+            }
+
+        }
+
 
     }
 }

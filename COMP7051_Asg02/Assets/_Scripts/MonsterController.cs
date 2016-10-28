@@ -3,7 +3,7 @@ using System.Collections;
 
 /**Controls the movement of the NPC monster*/
 public class MonsterController : MonoBehaviour {
-   /**monster turning speed*/
+    /**monster turning speed*/
     public float turnSpeed = 100;
 
     /**monster walking speed*/
@@ -11,9 +11,6 @@ public class MonsterController : MonoBehaviour {
 
     /**how long the monster continues to turn after it is no longer colliding with an object*/
     public float turningTime = 1;
-
-    /**the the monter's rigidbody*/
-    private Rigidbody rb;
 
     /** the direction to turn in positive = right negetive = left. This is set in OnCollisionStay()*/
     private float turnDirection = 1;
@@ -30,7 +27,6 @@ public class MonsterController : MonoBehaviour {
     // Use this for initialization
     void Start() {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -38,7 +34,7 @@ public class MonsterController : MonoBehaviour {
         turningControl();
 
         //if the monster should be moving forward, move it and get the animator to animate walding
-        if (forwardMotion >  0)        
+        if (forwardMotion > 0)
             transform.Translate(transform.forward * forwardMotion * walkSpeed * Time.deltaTime, Space.World);
 
         anim.SetFloat("forwardMotion", forwardMotion);
@@ -66,7 +62,7 @@ public class MonsterController : MonoBehaviour {
         Vector3 firstContactLocal = transform.InverseTransformPoint(collisionInfo.contacts[0].point);
         if (firstContactLocal.x > 0)
             turnDirection = -1;
-        else if(firstContactLocal.x < 0) 
+        else if (firstContactLocal.x < 0)
             turnDirection = 1;
     }
 

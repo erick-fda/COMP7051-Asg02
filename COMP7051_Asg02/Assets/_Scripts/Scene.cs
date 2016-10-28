@@ -106,8 +106,6 @@ public sealed class Scene : MonoBehaviour
     void Update()
     {
         ToggleFog();
-
-        resetScene();
     }
 
     /**
@@ -143,11 +141,7 @@ public sealed class Scene : MonoBehaviour
         }
     }
 
-    /* Reload the current scene on user input. */
-    private void resetScene() {
-        if (Input.GetKeyDown("home"))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+ 
 
     /*---------------------------------------------------------------------------------------
 		Singleton Methods

@@ -40,7 +40,11 @@ public static class IRefs
     {
         /* Keyboard and Button Commands */
         ToggleLighting,
-        ToggleFog
+        ToggleFog,
+        ToggleWalkThroughWalls,
+        ResetGame,
+        PlayerRun
+
 
         /* Axis Commands */
         // e.g. -- MoveVertical,
@@ -58,7 +62,10 @@ public static class IRefs
     {
         /* Key and Button Commands */
         {Command.ToggleLighting,    "ToggleLighting"},
-        {Command.ToggleFog,         "ToggleFog"}
+        {Command.ToggleFog,         "ToggleFog"},
+        {Command.ToggleWalkThroughWalls,    "ToggleWalkThroughWalls"},
+        {Command.ResetGame,    "ResetGame"},
+        {Command.PlayerRun,    "PlayerRun"},
 
         /* Axis Commands */
         // e.g. -- {Command.MoveVertical,   "MoveVertical"}
@@ -85,7 +92,10 @@ public static class IRefs
 
         /* Player 1 Commands */
         {CommandStrings[Command.ToggleLighting] + 1,  KeyCode.L},
-        {CommandStrings[Command.ToggleFog] + 1,       KeyCode.F}
+        {CommandStrings[Command.ToggleFog] + 1,       KeyCode.F},
+        {CommandStrings[Command.ToggleWalkThroughWalls] + 1,       KeyCode.W},
+        {CommandStrings[Command.ResetGame] + 1,       KeyCode.Home},
+        {CommandStrings[Command.PlayerRun] + 1,       KeyCode.LeftShift}
     };
 
     /*---------------------------------------------------------------------------------------
@@ -106,8 +116,11 @@ public static class IRefs
         // e.g. -- {CommandStrings[Command.MoveUp] + 0, JoystickButton.LeftBumper},
 
         /* Player 1 Commands */
-        {CommandStrings[Command.ToggleLighting] + 1,    JoystickButton.Back_P1},
-        {CommandStrings[Command.ToggleFog] + 1,         JoystickButton.Start_P1}
+        {CommandStrings[Command.ToggleLighting] + 1,    JoystickButton.B_P1},
+        {CommandStrings[Command.ToggleFog] + 1,         JoystickButton.A_P1},
+        {CommandStrings[Command.ToggleWalkThroughWalls] + 1,         JoystickButton.X_P1},
+        {CommandStrings[Command.ResetGame] + 1,         JoystickButton.Start_P1},
+        {CommandStrings[Command.PlayerRun] + 1,         JoystickButton.LeftBumper_P1},
     };
 
     /*---------------------------------------------------------------------------------------
