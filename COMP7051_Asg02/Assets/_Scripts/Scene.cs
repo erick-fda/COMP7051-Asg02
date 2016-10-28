@@ -106,9 +106,8 @@ public sealed class Scene : MonoBehaviour
     void Update()
     {
         ToggleFog();
+        resetSceneControls();
 
-        if (IRefs.GetKeyDown(IRefs.Command.ResetGame))
-            resetScene();
     }
 
     /**
@@ -143,6 +142,29 @@ public sealed class Scene : MonoBehaviour
             RenderSettings.fog = !RenderSettings.fog;
         }
     }
+
+    /**time since the last touchscreen touch. used to detect double tapping*/
+    private float timeSinceTap = 10;
+
+    /**manages user input for scene resetting*/
+    private void resetSceneControls() {
+        //detect if reset button pressed on keyboard or controller
+        if (IRefs.GetKeyDown(IRefs.Command.ResetGame))
+            resetScene();
+
+        //detects if a double tapp occured
+        timeSinceTap += Time.deltaTime;
+        if (Input.touchCount == 1) {
+            Touch touch = Input.GetTouch(0);
+            if(touch.phase == TouchPhase.Ended) {
+                if(timeSinceTap < 1)
+                    resetScene();
+                timeSinceTap = 0;
+            }
+               
+        }
+    }
+
 
     /* Reload the current scene on user input. */
     public void resetScene() {

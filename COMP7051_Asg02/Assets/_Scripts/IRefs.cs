@@ -116,7 +116,7 @@ public static class IRefs
         // e.g. -- {CommandStrings[Command.MoveUp] + 0, JoystickButton.LeftBumper},
 
         /* Player 1 Commands */
-        {CommandStrings[Command.ToggleLighting] + 1,    JoystickButton.Back_P1},
+        {CommandStrings[Command.ToggleLighting] + 1,    JoystickButton.B_P1},
         {CommandStrings[Command.ToggleFog] + 1,         JoystickButton.A_P1},
         {CommandStrings[Command.ToggleWalkThroughWalls] + 1,         JoystickButton.X_P1},
         {CommandStrings[Command.ResetGame] + 1,         JoystickButton.Start_P1},
