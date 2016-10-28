@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         //mouse controls for character movement and rotation
-        if (Input.GetAxis("MoveForward") > 0) {
+        if (Input.GetMouseButton(0) && Input.touchCount == 0) {
             transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
 
             float rotationDirection = Input.mousePosition.x / (Screen.width / 2) - 1;
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour {
             //rotation
             float rotateSpeed = Input.GetTouch(0).position.x / Screen.width - .5f;
             transform.Rotate(0, rotateSpeed * turnSpeed * Time.deltaTime, 0);
-            anim.SetFloat("forwardMotion", Math.Max(moveSpeed, rotateSpeed));
+            anim.SetFloat("forwardMotion", 1);
         }
 
         if (IRefs.GetKeyDown(IRefs.Command.ToggleWalkThroughWalls))
