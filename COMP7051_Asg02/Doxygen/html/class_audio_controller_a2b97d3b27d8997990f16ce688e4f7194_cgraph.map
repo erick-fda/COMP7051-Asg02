@@ -1,0 +1,7 @@
+<map id="AudioController.ToggleIsMusicPlaying" name="AudioController.ToggleIsMusicPlaying">
+<area shape="rect" id="node2" href="$class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="238,31,369,57"/>
+<area shape="rect" id="node5" href="$class_audio_controller.html#a0524ef7200d5462bfe04281de32c2101" title="Stops playing the audio clip specified by audioName. " alt="" coords="216,81,391,108"/>
+<area shape="rect" id="node6" href="$class_audio_controller.html#ad6a85090fb3491860011dd3ef5889964" title="Begins playing the audio clip specified by audioName. " alt="" coords="217,132,390,159"/>
+<area shape="rect" id="node3" href="$class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="443,5,629,32"/>
+<area shape="rect" id="node4" href="$class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="439,56,633,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="AudioController.PlayAudio" name="AudioController.PlayAudio">
+<area shape="rect" id="node2" href="$class_audio_controller.html#a4980d6082a42a15da6f13bff9e39c0dc" title="Initialize audio in the scene. " alt="" coords="227,5,395,47"/>
+<area shape="rect" id="node4" href="$class_audio_controller.html#a2b97d3b27d8997990f16ce688e4f7194" title="Toggles whether background music is playing. " alt="" coords="229,71,392,112"/>
+<area shape="rect" id="node3" href="$class_audio_controller.html#a9f54b63fdcc425116ff24c93775a1338" title="Called once before the first frame update after all Awake() methods have completed. " alt="" coords="449,13,591,39"/>
+<area shape="rect" id="node5" href="$class_audio_controller.html#a1a32c3f46bc98ac613909804bc9b81cc" title="Called once per frame. " alt="" coords="443,78,597,105"/>
+</map>

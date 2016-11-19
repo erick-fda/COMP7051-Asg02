@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quitgame',['quitGame',['../class_menu_manager.html#a73a2d4d7508891011204c27aa40b20d8',1,'MenuManager']]]
+  ['playaudio',['PlayAudio',['../class_audio_controller.html#ad6a85090fb3491860011dd3ef5889964',1,'AudioController']]]
 ];

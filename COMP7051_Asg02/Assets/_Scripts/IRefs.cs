@@ -43,8 +43,8 @@ public static class IRefs
         ToggleFog,
         ToggleWalkThroughWalls,
         ResetGame,
-        PlayerRun
-
+        PlayerRun,
+        ToggleMusic,
 
         /* Axis Commands */
         // e.g. -- MoveVertical,
@@ -66,6 +66,7 @@ public static class IRefs
         {Command.ToggleWalkThroughWalls,    "ToggleWalkThroughWalls"},
         {Command.ResetGame,    "ResetGame"},
         {Command.PlayerRun,    "PlayerRun"},
+        {Command.ToggleMusic,    "ToggleMusic"},
 
         /* Axis Commands */
         // e.g. -- {Command.MoveVertical,   "MoveVertical"}
@@ -95,7 +96,8 @@ public static class IRefs
         {CommandStrings[Command.ToggleFog] + 1,       KeyCode.F},
         {CommandStrings[Command.ToggleWalkThroughWalls] + 1,       KeyCode.W},
         {CommandStrings[Command.ResetGame] + 1,       KeyCode.Home},
-        {CommandStrings[Command.PlayerRun] + 1,       KeyCode.LeftShift}
+        {CommandStrings[Command.PlayerRun] + 1,       KeyCode.LeftShift},
+        {CommandStrings[Command.ToggleMusic] + 1,       KeyCode.X},
     };
 
     /*---------------------------------------------------------------------------------------
@@ -121,6 +123,7 @@ public static class IRefs
         {CommandStrings[Command.ToggleWalkThroughWalls] + 1,         JoystickButton.Y_P1},
         {CommandStrings[Command.ResetGame] + 1,         JoystickButton.Start_P1},
         {CommandStrings[Command.PlayerRun] + 1,         JoystickButton.LeftBumper_P1},
+        {CommandStrings[Command.ToggleMusic] + 1,       JoystickButton.Back_P1},
     };
 
     /*---------------------------------------------------------------------------------------

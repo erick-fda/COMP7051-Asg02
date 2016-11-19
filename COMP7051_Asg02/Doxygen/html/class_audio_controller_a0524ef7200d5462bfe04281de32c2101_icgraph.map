@@ -1,0 +1,4 @@
+<map id="AudioController.StopAudio" name="AudioController.StopAudio">
+<area shape="rect" id="node2" href="$class_audio_controller.html#a2b97d3b27d8997990f16ce688e4f7194" title="Toggles whether background music is playing. " alt="" coords="228,5,391,47"/>
+<area shape="rect" id="node3" href="$class_audio_controller.html#a1a32c3f46bc98ac613909804bc9b81cc" title="Called once per frame. " alt="" coords="439,13,593,39"/>
+</map>

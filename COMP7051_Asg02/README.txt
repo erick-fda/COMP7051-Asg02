@@ -42,7 +42,9 @@
     Camera Rotation             -   right mouse button  -  Right stick   -   two finger drag
                                     hold and drag
 
-    Camera Zoom                 -   mouse wheel         -      N/A       -   two finger pinch
+    Camera Zoom                 -   mouse wheel         -   N/A          -   two finger pinch
+    
+    Toggle Music On/Off         -   X                   -   Back         -   Menu button
     
 ---------------------------------------------------------------------------------------------
     ## Code Documentation

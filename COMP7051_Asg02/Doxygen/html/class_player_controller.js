@@ -1,5 +1,6 @@
 var class_player_controller =
 [
+    [ "OnTriggerEnter", "class_player_controller.html#a2a0510e318c75ef04e45b4ece3bd31cd", null ],
     [ "Start", "class_player_controller.html#ae1117d9c4da3193181cddad2c814e467", null ],
     [ "toggleDetectCollisions", "class_player_controller.html#a1e50b53148015ea94166dd1826113c2c", null ],
     [ "Update", "class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43", null ],

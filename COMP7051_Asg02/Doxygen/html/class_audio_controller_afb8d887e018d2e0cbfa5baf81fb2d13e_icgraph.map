@@ -1,0 +1,4 @@
+<map id="AudioController.SetDayMusicPlaying" name="AudioController.SetDayMusicPlaying">
+<area shape="rect" id="node2" href="$class_audio_controller.html#a4980d6082a42a15da6f13bff9e39c0dc" title="Initialize audio in the scene. " alt="" coords="245,5,413,47"/>
+<area shape="rect" id="node3" href="$class_audio_controller.html#a9f54b63fdcc425116ff24c93775a1338" title="Called once before the first frame update after all Awake() methods have completed. " alt="" coords="461,13,604,39"/>
+</map>

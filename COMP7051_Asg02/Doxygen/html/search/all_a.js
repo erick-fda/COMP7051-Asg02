@@ -18,5 +18,6 @@ var searchData=
   ['leftstick_5fp5',['LeftStick_P5',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa0fbbd2f184b1cd4139d42dfcac206cfa',1,'IRefs']]],
   ['leftstick_5fp6',['LeftStick_P6',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa8d614a5f45d51b0f82cab1baf3ed12d3',1,'IRefs']]],
   ['leftstick_5fp7',['LeftStick_P7',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa81f660a042070048a9abe2115d9397d6',1,'IRefs']]],
-  ['leftstick_5fp8',['LeftStick_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa63a09c6b1fa2b4cbbf2507cb8179cf43',1,'IRefs']]]
+  ['leftstick_5fp8',['LeftStick_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa63a09c6b1fa2b4cbbf2507cb8179cf43',1,'IRefs']]],
+  ['lowmusicvolume',['LowMusicVolume',['../class_audio_controller.html#a6ecc16dbebc6ce98d46adc919db760d6',1,'AudioController']]]
 ];

@@ -114,7 +114,6 @@ $(document).ready(function(){initNavTree('class_scene.html','');});
 <a href="#properties">Properties</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Scene Class Reference</div>  </div>
@@ -127,11 +126,15 @@ $(document).ready(function(){initNavTree('class_scene.html','');});
 Inheritance diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene__inherit__graph.png" border="0" usemap="#_scene_inherit__map" alt="Inheritance graph"/></div>
+<map name="_scene_inherit__map" id="_scene_inherit__map">
+</map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene__coll__graph.png" border="0" usemap="#_scene_coll__map" alt="Collaboration graph"/></div>
+<map name="_scene_coll__map" id="_scene_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -143,6 +146,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a410cddc0e1f024ddce8308951fe2a771"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a410cddc0e1f024ddce8308951fe2a771">Player</a></td></tr>
+<tr class="memdesc:a410cddc0e1f024ddce8308951fe2a771"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player GameObject.  <a href="#a410cddc0e1f024ddce8308951fe2a771">More...</a><br /></td></tr>
+<tr class="separator:a410cddc0e1f024ddce8308951fe2a771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e84cdf4a0a13f50cd0ba4a776407f3"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ad7e84cdf4a0a13f50cd0ba4a776407f3">mat_Ground</a></td></tr>
 <tr class="memdesc:ad7e84cdf4a0a13f50cd0ba4a776407f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material for the level's ground.  <a href="#ad7e84cdf4a0a13f50cd0ba4a776407f3">More...</a><br /></td></tr>
 <tr class="separator:ad7e84cdf4a0a13f50cd0ba4a776407f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,9 +178,6 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a1fc77e041e23e2b4547cc1bad1bf9f00"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_scene.html">Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1fc77e041e23e2b4547cc1bad1bf9f00">Instance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a1fc77e041e23e2b4547cc1bad1bf9f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public access property for <a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9" title="Private static Scene instance. ">Scene.instance</a>.  <a href="#a1fc77e041e23e2b4547cc1bad1bf9f00">More...</a><br /></td></tr>
-<tr class="separator:a1fc77e041e23e2b4547cc1bad1bf9f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ef2decf52555d5dce05fe253e873e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a34ef2decf52555d5dce05fe253e873e2">IsDaylit</a><code> [get, private set]</code></td></tr>
 <tr class="separator:a34ef2decf52555d5dce05fe253e873e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -195,21 +198,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aae8692dd9cfe6710e866e640c0f37231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aae8692dd9cfe6710e866e640c0f37231">LateUpdate</a> ()</td></tr>
 <tr class="memdesc:aae8692dd9cfe6710e866e640c0f37231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after all <a class="el" href="class_scene.html#a5b82e1c2ead9385c3ddd81bb54440f95" title="Called once per frame. ">Update()</a> calculations have been performed.  <a href="#aae8692dd9cfe6710e866e640c0f37231">More...</a><br /></td></tr>
 <tr class="separator:aae8692dd9cfe6710e866e640c0f37231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10f4b7d33220c65d1894281b23a51139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a10f4b7d33220c65d1894281b23a51139">EnforceSingleton</a> ()</td></tr>
-<tr class="memdesc:a10f4b7d33220c65d1894281b23a51139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>.  <a href="#a10f4b7d33220c65d1894281b23a51139">More...</a><br /></td></tr>
-<tr class="separator:a10f4b7d33220c65d1894281b23a51139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0d9418ec5e964063eef1b7023185419a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a0d9418ec5e964063eef1b7023185419a">isDaylit</a> = false</td></tr>
 <tr class="memdesc:a0d9418ec5e964063eef1b7023185419a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the scene lit by daylight?  <a href="#a0d9418ec5e964063eef1b7023185419a">More...</a><br /></td></tr>
 <tr class="separator:a0d9418ec5e964063eef1b7023185419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_scene.html">Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9">instance</a> = null</td></tr>
-<tr class="memdesc:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a> instance.  <a href="#ac45c42a9eedd3201b1d83e7e26e10ab9">More...</a><br /></td></tr>
-<tr class="separator:ac45c42a9eedd3201b1d83e7e26e10ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages scene state and acts as a MonoBehaviour agent for the Game. </p>
@@ -236,54 +230,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called once when the script is loaded. </p>
-<p>Used for setting up references to other scripts and enforcing singleton behaviours on MonoBehaviours.</p>
-<p>Enforces the singleton pattern on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>. </p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_scene_ab98b367a03b266c4d180bb191c78ac29_cgraph.png" border="0" usemap="#class_scene_ab98b367a03b266c4d180bb191c78ac29_cgraph" alt=""/></div>
-<map name="class_scene_ab98b367a03b266c4d180bb191c78ac29_cgraph" id="class_scene_ab98b367a03b266c4d180bb191c78ac29_cgraph">
-<area shape="rect" id="node2" href="class_scene.html#a10f4b7d33220c65d1894281b23a51139" title="Enforces singleton behaviour on the Scene. " alt="" coords="156,5,317,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a10f4b7d33220c65d1894281b23a51139"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Scene.EnforceSingleton </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enforces singleton behaviour on the <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a>. </p>
-<p>Prevents secondary instances from being created and destroys them if they are. </p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_scene_a10f4b7d33220c65d1894281b23a51139_icgraph.png" border="0" usemap="#class_scene_a10f4b7d33220c65d1894281b23a51139_icgraph" alt=""/></div>
-<map name="class_scene_a10f4b7d33220c65d1894281b23a51139_icgraph" id="class_scene_a10f4b7d33220c65d1894281b23a51139_icgraph">
-<area shape="rect" id="node2" href="class_scene.html#ab98b367a03b266c4d180bb191c78ac29" title="Called once when the script is loaded. " alt="" coords="215,5,317,32"/>
-</map>
-</div>
-</p>
+<p>Used for setting up references to other scripts and enforcing singleton behaviours on MonoBehaviours. </p>
 
 </div>
 </div>
@@ -532,28 +479,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac45c42a9eedd3201b1d83e7e26e10ab9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_scene.html">Scene</a> Scene.instance = null</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Private static <a class="el" href="class_scene.html" title="Manages scene state and acts as a MonoBehaviour agent for the Game. ">Scene</a> instance. </p>
-
-</div>
-</div>
 <a class="anchor" id="a0d9418ec5e964063eef1b7023185419a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -660,30 +585,21 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a1fc77e041e23e2b4547cc1bad1bf9f00"></a>
+<a class="anchor" id="a410cddc0e1f024ddce8308951fe2a771"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_scene.html">Scene</a> Scene.Instance</td>
+          <td class="memname">GameObject Scene.Player</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Public access property for <a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9" title="Private static Scene instance. ">Scene.instance</a>. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_scene.html#ac45c42a9eedd3201b1d83e7e26e10ab9" title="Private static Scene instance. ">Scene.instance</a> </dd></dl>
+<p>The player GameObject. </p>
 
 </div>
 </div>
+<h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a34ef2decf52555d5dce05fe253e873e2"></a>
 <div class="memitem">
 <div class="memproto">

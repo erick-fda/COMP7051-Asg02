@@ -51,9 +51,13 @@ public class PlayerController : MonoBehaviour {
         // Update is called once per frame
         void Update() {
         if (Input.GetAxis("Vertical") > .1)
+        {
             anim.SetFloat("forwardMotion", Input.GetAxis("Vertical"));
+        }
         else
+        {
             anim.SetFloat("forwardMotion", 0);
+        }
 
         //if run button is held down enable running
         if (Application.platform != RuntimePlatform.Android && IRefs.GetKey(IRefs.Command.PlayerRun))
@@ -67,7 +71,9 @@ public class PlayerController : MonoBehaviour {
 
         //forward movement (controller and keyboard)
         if (Input.GetAxis("Vertical") > 0)
+        {
             transform.Translate(transform.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime, Space.World);
+        }
 
         //rotation (controller and keyboard)
         if (Input.GetAxis("Horizontal") != 0) {
@@ -101,11 +107,36 @@ public class PlayerController : MonoBehaviour {
         if (IRefs.GetKeyDown(IRefs.Command.ToggleWalkThroughWalls))
             toggleDetectCollisions();
 
+        /* Start and stop footsteps SFX. */
+        if ((anim.GetFloat("forwardMotion") > 0) && 
+            !(gameObject.GetComponent<AudioController>().FootstepsAudio.isPlaying))
+        {
+            gameObject.GetComponent<AudioController>().PlayAudio(AudioController.AudioNames.Footsteps);
+        }
+        else if ((anim.GetFloat("forwardMotion") == 0))
+        {
+            gameObject.GetComponent<AudioController>().StopAudio(AudioController.AudioNames.Footsteps);
+        }
     }
     
     /**toggles ability to walk through walls*/
     public void toggleDetectCollisions() {
         detectCollisions = !detectCollisions;
         rb.isKinematic = !detectCollisions;
+    }
+
+    /**
+        Plays a sound effect when the player collides with a wall.
+    */
+    void OnTriggerEnter(Collider other)
+    {
+        /* If the player object can collide with walls and the other object is a wall, 
+            play a sound effect. */
+        if ((detectCollisions) &&
+            (other.gameObject.CompareTag(Refs.Tags.Wall)))
+        {
+            Debug.Log("You collided with a wall!");
+            gameObject.GetComponent<AudioController>().PlayAudio(AudioController.AudioNames.WallCollision);
+        }
     }
 }

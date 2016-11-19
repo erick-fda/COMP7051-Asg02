@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['toggledetectcollisions',['toggleDetectCollisions',['../class_player_controller.html#a1e50b53148015ea94166dd1826113c2c',1,'PlayerController']]],
-  ['togglefog',['ToggleFog',['../class_scene.html#a5268cd8e740a02b4d318d0e3c8ed5e31',1,'Scene']]],
-  ['togglelighting',['ToggleLighting',['../class_day_night.html#a5f89e325d4fae6d6db2ad77902d82f86',1,'DayNight.ToggleLighting()'],['../class_scene.html#af157e7d0b8c1e1a0df54b47bdd9d3572',1,'Scene.ToggleLighting()']]],
-  ['turningcontrol',['turningControl',['../class_monster_controller.html#a9daecc35a89d627aa4b8be2f9dedeedc',1,'MonsterController']]]
+  ['setdaymusicplaying',['SetDayMusicPlaying',['../class_audio_controller.html#afb8d887e018d2e0cbfa5baf81fb2d13e',1,'AudioController']]],
+  ['start',['Start',['../class_audio_controller.html#a9f54b63fdcc425116ff24c93775a1338',1,'AudioController.Start()'],['../class_camera_controller.html#ad4a238c6f7db3ee003302a245d860860',1,'CameraController.Start()'],['../class_day_night.html#ad1b191a7c6e432f737aaec62224240c1',1,'DayNight.Start()'],['../class_menu_manager.html#a479846feaf36055dc2dbb44cb374f015',1,'MenuManager.Start()'],['../class_monster_controller.html#a0875c3b2f40968c96da92f82ba58abfa',1,'MonsterController.Start()'],['../class_player_controller.html#ae1117d9c4da3193181cddad2c814e467',1,'PlayerController.Start()'],['../class_scene.html#ac3a567b103bd5d3590b85747b7672380',1,'Scene.Start()'],['../class_debug_camera_controller.html#aa2a2ad88e5c2717136eec7348530b2a1',1,'DebugCameraController.Start()']]],
+  ['stopaudio',['StopAudio',['../class_audio_controller.html#a0524ef7200d5462bfe04281de32c2101',1,'AudioController']]]
 ];

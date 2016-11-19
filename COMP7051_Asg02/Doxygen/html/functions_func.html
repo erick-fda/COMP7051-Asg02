@@ -92,11 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
-      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_q"><span>q</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
@@ -138,7 +139,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>Awake()
-: <a class="el" href="class_day_night.html#a42109255a2b3838fab2ba49bcbd8dc92">DayNight</a>
+: <a class="el" href="class_audio_controller.html#a07cc6741c4eefebaf156a8b045e8f2b5">AudioController</a>
+, <a class="el" href="class_day_night.html#a42109255a2b3838fab2ba49bcbd8dc92">DayNight</a>
 , <a class="el" href="class_debug_camera_controller.html#a397ada68d149b99d5cefc7f1ff3f9cbd">DebugCameraController</a>
 , <a class="el" href="class_scene.html#ab98b367a03b266c4d180bb191c78ac29">Scene</a>
 </li>
@@ -155,13 +157,6 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>DominantAxisOf()
 : <a class="el" href="class_i_refs.html#a642a98b6369b2b85290767868e63c6d0">IRefs</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
-<li>EnforceSingleton()
-: <a class="el" href="class_scene.html#a10f4b7d33220c65d1894281b23a51139">Scene</a>
 </li>
 </ul>
 
@@ -225,6 +220,13 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </ul>
 
 
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>InitSceneAudio()
+: <a class="el" href="class_audio_controller.html#a4980d6082a42a15da6f13bff9e39c0dc">AudioController</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>LateUpdate()
 : <a class="el" href="class_day_night.html#a6865616e3f6fe6e229419261e1617607">DayNight</a>
@@ -238,8 +240,18 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>OnCollisionStay()
 : <a class="el" href="class_monster_controller.html#a0c95aa10211ee2892fe94ca9ce4f70db">MonsterController</a>
 </li>
+<li>OnTriggerEnter()
+: <a class="el" href="class_player_controller.html#a2a0510e318c75ef04e45b4ece3bd31cd">PlayerController</a>
+</li>
 <li>openMenu()
 : <a class="el" href="class_menu_manager.html#a34d8c17fedeb291b5ce4dcb1e3833692">MenuManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>PlayAudio()
+: <a class="el" href="class_audio_controller.html#ad6a85090fb3491860011dd3ef5889964">AudioController</a>
 </li>
 </ul>
 
@@ -262,14 +274,21 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>SetDayMusicPlaying()
+: <a class="el" href="class_audio_controller.html#afb8d887e018d2e0cbfa5baf81fb2d13e">AudioController</a>
+</li>
 <li>Start()
-: <a class="el" href="class_camera_controller.html#ad4a238c6f7db3ee003302a245d860860">CameraController</a>
+: <a class="el" href="class_audio_controller.html#a9f54b63fdcc425116ff24c93775a1338">AudioController</a>
+, <a class="el" href="class_camera_controller.html#ad4a238c6f7db3ee003302a245d860860">CameraController</a>
 , <a class="el" href="class_day_night.html#ad1b191a7c6e432f737aaec62224240c1">DayNight</a>
 , <a class="el" href="class_debug_camera_controller.html#aa2a2ad88e5c2717136eec7348530b2a1">DebugCameraController</a>
 , <a class="el" href="class_menu_manager.html#a479846feaf36055dc2dbb44cb374f015">MenuManager</a>
 , <a class="el" href="class_monster_controller.html#a0875c3b2f40968c96da92f82ba58abfa">MonsterController</a>
 , <a class="el" href="class_player_controller.html#ae1117d9c4da3193181cddad2c814e467">PlayerController</a>
 , <a class="el" href="class_scene.html#ac3a567b103bd5d3590b85747b7672380">Scene</a>
+</li>
+<li>StopAudio()
+: <a class="el" href="class_audio_controller.html#a0524ef7200d5462bfe04281de32c2101">AudioController</a>
 </li>
 </ul>
 
@@ -280,6 +299,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>ToggleFog()
 : <a class="el" href="class_scene.html#a5268cd8e740a02b4d318d0e3c8ed5e31">Scene</a>
+</li>
+<li>ToggleIsMusicPlaying()
+: <a class="el" href="class_audio_controller.html#a2b97d3b27d8997990f16ce688e4f7194">AudioController</a>
 </li>
 <li>ToggleLighting()
 : <a class="el" href="class_day_night.html#a5f89e325d4fae6d6db2ad77902d82f86">DayNight</a>
@@ -296,7 +318,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_i_refs_1_1_unsupported_platform_exception.html#a75f67266f25520e397e250e3438e7e70">IRefs.UnsupportedPlatformException</a>
 </li>
 <li>Update()
-: <a class="el" href="class_camera_controller.html#a7c4f486f4bcbd1d54a346fdce9707bd5">CameraController</a>
+: <a class="el" href="class_audio_controller.html#a1a32c3f46bc98ac613909804bc9b81cc">AudioController</a>
+, <a class="el" href="class_camera_controller.html#a7c4f486f4bcbd1d54a346fdce9707bd5">CameraController</a>
 , <a class="el" href="class_day_night.html#a47b6d77ec116a56b1b78311f0e8e3d6b">DayNight</a>
 , <a class="el" href="class_debug_camera_controller.html#a4eb325fbf242d61950d0f4bf05aa8e50">DebugCameraController</a>
 , <a class="el" href="class_menu_manager.html#a03b8675f75855fc897134409bd2685fe">MenuManager</a>

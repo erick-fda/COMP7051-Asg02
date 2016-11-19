@@ -21,34 +21,16 @@ using UnityEngine.SceneManagement;
 /**
 	Manages scene state and acts as a MonoBehaviour agent for the Game.
 */
-public sealed class Scene : MonoBehaviour
+public class Scene : MonoBehaviour
 {
-    /*=======================================================================================
-		Singleton
-	=======================================================================================*/
-    /**
-        Private static Scene instance.
-    */
-    private static Scene instance = null;
-
-    /**
-        Public access property for Scene.instance.
-
-        @see Scene.instance
-    */
-    public static Scene Instance
-    {
-        get { return instance; }
-
-        set { instance = value; }
-    }
-
     /*=======================================================================================
 		Fields
 	=======================================================================================*/
     /*---------------------------------------------------------------------------------------
 		Game Object References
 	---------------------------------------------------------------------------------------*/
+    public GameObject Player;       /**< The player GameObject. */
+
     public Material mat_Ground;     /**< The material for the level's ground. */
     public Material mat_TopWalls;   /**< The material for the maze's top walls. */
     public Material mat_NorthWalls; /**< The material for the maze's north walls. */
@@ -123,13 +105,10 @@ public sealed class Scene : MonoBehaviour
 
         Used for setting up references to other scripts and enforcing singleton behaviours 
         on MonoBehaviours.
-        
-        Enforces the singleton pattern on the Scene.
     */
     void Awake()
     {
-        /* Enforce the singleton pattern on the Scene. */
-        EnforceSingleton();
+
     }
 
     /**
@@ -187,10 +166,14 @@ public sealed class Scene : MonoBehaviour
     public void ToggleFog(bool assumeInput = false)
     {
         /* Toggle fog if key goes down. */
-        if (assumeInput || 
+        if (assumeInput ||
             IRefs.GetKeyDown(IRefs.Command.ToggleFog))
         {
             RenderSettings.fog = !RenderSettings.fog;
+            Player.GetComponent<AudioController>().DayMusicAudio.volume =
+                (RenderSettings.fog) ? AudioController.LowMusicVolume : AudioController.HighMusicVolume;
+            Player.GetComponent<AudioController>().NightMusicAudio.volume =
+                (RenderSettings.fog) ? AudioController.LowMusicVolume : AudioController.HighMusicVolume;
         }
     }
 
@@ -203,35 +186,8 @@ public sealed class Scene : MonoBehaviour
             IRefs.GetKeyDown(IRefs.Command.ToggleLighting))
         {
             IsDaylit = !IsDaylit;
-        }
-    }
-
- 
-
-    /*---------------------------------------------------------------------------------------
-		Singleton Methods
-	---------------------------------------------------------------------------------------*/
-    /**
-        Enforces singleton behaviour on the Scene.
-        Prevents secondary instances from being created and destroys them if they are.
-    */
-    private void EnforceSingleton()
-    {
-        /* If instance is null, set this Scene as the instance and ensure that it 
-            is not destroyed on loading subsequent scenes. */
-        if (Instance == null)
-        {
-            Instance = this;
-
-            Debug.Log("Scene instance created.");
-        }
-        /* If instance is not null and is not this Scene, destroy this 
-            Scene. */
-        else if (Instance != this)
-        {
-            Destroy(this.gameObject);
-
-            Debug.Log("Scene instance destroyed.");
+            Player.GetComponent<AudioController>().SetDayMusicPlaying(IsDaylit);
+            Player.GetComponent<AudioController>().PlayAudio(Player.GetComponent<AudioController>().musicToPlay);
         }
     }
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoomspeed',['zoomSpeed',['../class_camera_controller.html#ac5e7f931dc646e4a643f850da622c7c1',1,'CameraController']]]
+  ['player',['Player',['../class_scene.html#a410cddc0e1f024ddce8308951fe2a771',1,'Scene']]]
 ];

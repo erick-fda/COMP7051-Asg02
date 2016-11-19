@@ -1,0 +1,4 @@
+<map id="AudioController.InitSceneAudio" name="AudioController.InitSceneAudio">
+<area shape="rect" id="node2" href="$class_audio_controller.html#afb8d887e018d2e0cbfa5baf81fb2d13e" title="Sets day or night music. " alt="" coords="221,5,413,47"/>
+<area shape="rect" id="node3" href="$class_audio_controller.html#ad6a85090fb3491860011dd3ef5889964" title="Begins playing the audio clip specified by audioName. " alt="" coords="231,71,404,98"/>
+</map>

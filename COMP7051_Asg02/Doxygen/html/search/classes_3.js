@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['menumanager',['MenuManager',['../class_menu_manager.html',1,'']]],
-  ['monstercontroller',['MonsterController',['../class_monster_controller.html',1,'']]]
+  ['filenames',['Filenames',['../struct_refs_1_1_filenames.html',1,'Refs']]],
+  ['filepaths',['Filepaths',['../struct_refs_1_1_filepaths.html',1,'Refs']]]
 ];

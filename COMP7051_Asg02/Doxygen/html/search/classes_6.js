@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unsupportedplatformexception',['UnsupportedPlatformException',['../class_i_refs_1_1_unsupported_platform_exception.html',1,'IRefs']]]
+  ['playercontroller',['PlayerController',['../class_player_controller.html',1,'']]],
+  ['playerprefs',['PlayerPrefs',['../struct_refs_1_1_player_prefs.html',1,'Refs']]]
 ];

@@ -17,5 +17,6 @@ var searchData=
   ['back_5fp5',['Back_P5',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aaa58bb6ebbd35491b745946c2debfbff5',1,'IRefs']]],
   ['back_5fp6',['Back_P6',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa01b05a780827a882287427c5ff953e8c',1,'IRefs']]],
   ['back_5fp7',['Back_P7',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aaecf273aea11b3ba84b6199cd050580ec',1,'IRefs']]],
-  ['back_5fp8',['Back_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa8e9837b076002019758f9f06f33f5632',1,'IRefs']]]
+  ['back_5fp8',['Back_P8',['../class_i_refs.html#acdf0bba08e159a6278ec4d4b8ac3100aa8e9837b076002019758f9f06f33f5632',1,'IRefs']]],
+  ['battle',['Battle',['../struct_refs_1_1_scenes.html#a5178647c915aa6dcc445d18fc9b5efaf',1,'Refs::Scenes']]]
 ];

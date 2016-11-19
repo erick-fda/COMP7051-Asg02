@@ -1,6 +1,8 @@
 var searchData=
 [
   ['rb',['rb',['../class_player_controller.html#a93b9fa76e5456725594e87dd40f93611',1,'PlayerController']]],
+  ['refs',['Refs',['../class_refs.html',1,'']]],
+  ['refs_2ecs',['Refs.cs',['../_refs_8cs.html',1,'']]],
   ['resetgame',['ResetGame',['../class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a3e4d8672287eb4ed915169dc93b0c728',1,'IRefs']]],
   ['resetscene',['resetScene',['../class_menu_manager.html#a6d28ebe295f0fc5dbc13c43215297190',1,'MenuManager']]],
   ['resetscenecontrols',['resetSceneControls',['../class_menu_manager.html#ab44537e5fe3678c6d96c94c568d614e4',1,'MenuManager']]],

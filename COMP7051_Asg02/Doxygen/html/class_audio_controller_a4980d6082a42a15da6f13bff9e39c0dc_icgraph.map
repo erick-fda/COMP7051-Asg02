@@ -1,0 +1,3 @@
+<map id="AudioController.InitSceneAudio" name="AudioController.InitSceneAudio">
+<area shape="rect" id="node2" href="$class_audio_controller.html#a9f54b63fdcc425116ff24c93775a1338" title="Called once before the first frame update after all Awake() methods have completed. " alt="" coords="221,13,364,39"/>
+</map>
