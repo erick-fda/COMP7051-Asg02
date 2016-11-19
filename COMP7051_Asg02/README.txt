@@ -24,27 +24,29 @@
 ---------------------------------------------------------------------------------------------
     ## Gameplay Controls
 ---------------------------------------------------------------------------------------------
-    CONTROL                         KEYBOARD/MOUSE       XBOX CONTROLLER        ANDROID
-    Toggle day/night lighting   -   L or Menu button    -      B         -   Menu button
+    CONTROL                         KEYBOARD/MOUSE          XBOX CONTROLLER     ANDROID
+    Toggle day/night lighting   -   L or Menu button    -   B               -   Menu button
 
-    Toggle fog                  -   F or Menu button    -      A         -   Menu button
+    Toggle fog                  -   F or Menu button    -   A               -   Menu button
 
-    Reset game to start         -   Home or Menu button -    Start       -   Double Tap or Menu Button
+    Reset game to start         -   Home or Menu button -   Start           -   Double Tap or Menu Button
 
-    Toggle walk through walls   -   W or Menu button    -      Y         -   Main Menu button
+    Toggle walk through walls   -   W or Menu button    -   Y               -   Main Menu button
 
-    Character Movement          -   Arrow Keys          -  Left stick    -   Single finger press
+    Character Movement          -   Arrow Keys          -   Left Stick      -   Single finger press
                                     or left mouse 
                                     button
 
-    Toggle running /walking     -   Hold Left Shift     -   Left bumper  -        N/A
+    Toggle running /walking     -   Hold Left Shift     -   Left Bumper     -   N/A
 
-    Camera Rotation             -   right mouse button  -  Right stick   -   two finger drag
+    Camera Rotation             -   right mouse button  -   Right Stick     -   Two-finger drag
                                     hold and drag
 
-    Camera Zoom                 -   mouse wheel         -   N/A          -   two finger pinch
+    Camera Zoom                 -   mouse wheel         -   N/A             -   Two-finger pinch
     
-    Toggle Music On/Off         -   X                   -   Back         -   Menu button
+    Toggle Music On/Off         -   X                   -   Back            -   Menu button
+    
+    Toggle Flashlight           -   Z                   -   Right Bumper    -   Menu Button
     
 ---------------------------------------------------------------------------------------------
     ## Code Documentation
@@ -56,6 +58,8 @@
     ## External Tools Used 
 ---------------------------------------------------------------------------------------------
    - Ground and floor textures obtained on the Unity Asset Store.
+   - Sound effects obtained on the Unity Asset Store.
+   - Background music obtained from the Final Fantasy II Soundtrack.
  
    - Monster and player character models and animations obtained from the Unity Asset Store
 	(Animator Controllers and all scripts made by us)
