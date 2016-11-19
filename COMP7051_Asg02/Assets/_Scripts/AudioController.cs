@@ -25,6 +25,9 @@ public class AudioController : MonoBehaviour
     /*=======================================================================================
 		Internal Types
 	=======================================================================================*/
+    /**
+        Struct containing string constants for audio names.
+    */
     public struct AudioNames
     {
         public const string Footsteps = "Footsteps";
@@ -39,23 +42,22 @@ public class AudioController : MonoBehaviour
     /*---------------------------------------------------------------------------------------
 		Game Object References
 	---------------------------------------------------------------------------------------*/
-    public AudioSource FootstepsAudio;
-    public AudioSource WallCollideAudio;
-    public AudioSource DayMusicAudio;
-    public AudioSource NightMusicAudio;
-    public GameObject scene;
+    public AudioSource FootstepsAudio;      /**< The audio source for the footsteps SFX. */
+    public AudioSource WallCollideAudio;    /**< The audio source for the wall collision SFX. */
+    public AudioSource DayMusicAudio;       /**< The audio source for the day music. */
+    public AudioSource NightMusicAudio;     /**< The audio source for the night music. */
+    public GameObject scene;                /**< The scene object. */
 
     /*---------------------------------------------------------------------------------------
 		Public
 	---------------------------------------------------------------------------------------*/
-    public const float HighMusicVolume = 0.8f;
-    public const float LowMusicVolume = 0.4f;
-    public string musicToPlay = AudioNames.NightMusic;
+    public const float HighMusicVolume = 0.8f;  /**< The volume to play music at when the scene is not foggy. */
+    public const float LowMusicVolume = 0.4f;   /**< The volume to play music at when the scene is foggy. */
 
     /*---------------------------------------------------------------------------------------
 		Private
 	---------------------------------------------------------------------------------------*/
-    private bool isMusicPlaying = true;
+    private string musicToPlay = AudioNames.NightMusic; /**< The name of the background music to play. */
 
     /*---------------------------------------------------------------------------------------
 		Protected
@@ -65,7 +67,17 @@ public class AudioController : MonoBehaviour
     /*=======================================================================================
 		Properties
 	=======================================================================================*/
+    /**
+        Public access property for AudioController.musicToPlay.
 
+        @see AudioController.musicToPlay
+    */
+    public string MusicToPlay
+    {
+        get { return musicToPlay; }
+
+        set { musicToPlay = value; }
+    }
 
     /*=======================================================================================
 		Methods
@@ -119,7 +131,7 @@ public class AudioController : MonoBehaviour
         SetDayMusicPlaying(scene.GetComponent<Scene>().IsDaylit);
 
         /* Play scene music. */
-        PlayAudio(musicToPlay);
+        PlayAudio(MusicToPlay);
     }
 
     /**
@@ -195,7 +207,7 @@ public class AudioController : MonoBehaviour
     */
     public void SetDayMusicPlaying(bool playDayMusic)
     {
-        musicToPlay = (playDayMusic) ? AudioNames.DayMusic : AudioNames.NightMusic;
+        MusicToPlay = (playDayMusic) ? AudioNames.DayMusic : AudioNames.NightMusic;
     }
 
     /**
@@ -213,8 +225,19 @@ public class AudioController : MonoBehaviour
             }
             else
             {
-                PlayAudio(musicToPlay);
+                PlayAudio(MusicToPlay);
             }
         }
+    }
+
+    /*
+        Set the volume of music in the scene.
+    */
+    public void SetMusicVolume()
+    {
+        DayMusicAudio.volume =
+                (RenderSettings.fog) ? AudioController.LowMusicVolume : AudioController.HighMusicVolume;
+        NightMusicAudio.volume =
+                (RenderSettings.fog) ? AudioController.LowMusicVolume : AudioController.HighMusicVolume;
     }
 }

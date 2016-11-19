@@ -7,7 +7,8 @@ var class_i_refs =
       [ "ToggleWalkThroughWalls", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a7c4fd2d10deaa833badf2e16cd43a0b3", null ],
       [ "ResetGame", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a3e4d8672287eb4ed915169dc93b0c728", null ],
       [ "PlayerRun", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a3b19041e8dffa22ab55c5ebb7272de58", null ],
-      [ "ToggleMusic", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7adcfdcc5b781f924cf4c420e764bb1d1d", null ]
+      [ "ToggleMusic", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7adcfdcc5b781f924cf4c420e764bb1d1d", null ],
+      [ "ToggleFlashlight", "class_i_refs.html#a29032d1ad41fe7c9501a1aa74138d1e7a003a8ae24db44782c7e9aee3ae077703", null ]
     ] ],
     [ "InputSource", "class_i_refs.html#a9d1f3e8e9c6120972f1934acd6395628", [
       [ "None", "class_i_refs.html#a9d1f3e8e9c6120972f1934acd6395628a6adf97f83acf6453d4a6a4b1070f3754", null ],

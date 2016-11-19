@@ -45,6 +45,7 @@ public static class IRefs
         ResetGame,
         PlayerRun,
         ToggleMusic,
+        ToggleFlashlight,
 
         /* Axis Commands */
         // e.g. -- MoveVertical,
@@ -67,6 +68,7 @@ public static class IRefs
         {Command.ResetGame,    "ResetGame"},
         {Command.PlayerRun,    "PlayerRun"},
         {Command.ToggleMusic,    "ToggleMusic"},
+        {Command.ToggleFlashlight,    "ToggleFlashlight"},
 
         /* Axis Commands */
         // e.g. -- {Command.MoveVertical,   "MoveVertical"}
@@ -98,6 +100,7 @@ public static class IRefs
         {CommandStrings[Command.ResetGame] + 1,       KeyCode.Home},
         {CommandStrings[Command.PlayerRun] + 1,       KeyCode.LeftShift},
         {CommandStrings[Command.ToggleMusic] + 1,       KeyCode.X},
+        {CommandStrings[Command.ToggleFlashlight] + 1,       KeyCode.Z},
     };
 
     /*---------------------------------------------------------------------------------------
@@ -124,6 +127,7 @@ public static class IRefs
         {CommandStrings[Command.ResetGame] + 1,         JoystickButton.Start_P1},
         {CommandStrings[Command.PlayerRun] + 1,         JoystickButton.LeftBumper_P1},
         {CommandStrings[Command.ToggleMusic] + 1,       JoystickButton.Back_P1},
+        {CommandStrings[Command.ToggleFlashlight] + 1,       JoystickButton.RightBumper_P1},
     };
 
     /*---------------------------------------------------------------------------------------

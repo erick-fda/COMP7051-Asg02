@@ -119,8 +119,11 @@ public class Scene : MonoBehaviour
 	*/
     void Start()
     {
-        /* Begin the scene with fog on. */
+        /* Begin the scene with night lighting. */
         IsDaylit = false;
+
+        /* Set the volume of music in the scene. */
+        Player.GetComponent<AudioController>().SetMusicVolume();
     }
 
     /**
@@ -170,10 +173,7 @@ public class Scene : MonoBehaviour
             IRefs.GetKeyDown(IRefs.Command.ToggleFog))
         {
             RenderSettings.fog = !RenderSettings.fog;
-            Player.GetComponent<AudioController>().DayMusicAudio.volume =
-                (RenderSettings.fog) ? AudioController.LowMusicVolume : AudioController.HighMusicVolume;
-            Player.GetComponent<AudioController>().NightMusicAudio.volume =
-                (RenderSettings.fog) ? AudioController.LowMusicVolume : AudioController.HighMusicVolume;
+            Player.GetComponent<AudioController>().SetMusicVolume();
         }
     }
 
@@ -187,7 +187,7 @@ public class Scene : MonoBehaviour
         {
             IsDaylit = !IsDaylit;
             Player.GetComponent<AudioController>().SetDayMusicPlaying(IsDaylit);
-            Player.GetComponent<AudioController>().PlayAudio(Player.GetComponent<AudioController>().musicToPlay);
+            Player.GetComponent<AudioController>().PlayAudio(Player.GetComponent<AudioController>().MusicToPlay);
         }
     }
 }

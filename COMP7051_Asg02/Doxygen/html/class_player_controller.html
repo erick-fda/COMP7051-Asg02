@@ -125,15 +125,11 @@ $(document).ready(function(){initNavTree('class_player_controller.html','');});
 Inheritance diagram for PlayerController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_player_controller__inherit__graph.png" border="0" usemap="#_player_controller_inherit__map" alt="Inheritance graph"/></div>
-<map name="_player_controller_inherit__map" id="_player_controller_inherit__map">
-</map>
 </div>
 <div class="dynheader">
 Collaboration diagram for PlayerController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_player_controller__coll__graph.png" border="0" usemap="#_player_controller_coll__map" alt="Collaboration graph"/></div>
-<map name="_player_controller_coll__map" id="_player_controller_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -141,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e50b53148015ea94166dd1826113c2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#a1e50b53148015ea94166dd1826113c2c">toggleDetectCollisions</a> ()</td></tr>
 <tr class="memdesc:a1e50b53148015ea94166dd1826113c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">toggles ability to walk through walls  <a href="#a1e50b53148015ea94166dd1826113c2c">More...</a><br /></td></tr>
 <tr class="separator:a1e50b53148015ea94166dd1826113c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fd44ceaa69367066dcde436d484f73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#a32fd44ceaa69367066dcde436d484f73">ToggleFlashlight</a> (bool assumeInput=false)</td></tr>
+<tr class="memdesc:a32fd44ceaa69367066dcde436d484f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the player's flashlight if input received.  <a href="#a32fd44ceaa69367066dcde436d484f73">More...</a><br /></td></tr>
+<tr class="separator:a32fd44ceaa69367066dcde436d484f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -153,6 +152,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a40299964fecfbf0ca1399d7ca1cb27b9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#a40299964fecfbf0ca1399d7ca1cb27b9">runSpeed</a> = 10</td></tr>
 <tr class="memdesc:a40299964fecfbf0ca1399d7ca1cb27b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">character running speed  <a href="#a40299964fecfbf0ca1399d7ca1cb27b9">More...</a><br /></td></tr>
 <tr class="separator:a40299964fecfbf0ca1399d7ca1cb27b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6be1e2069032feac82a1db98b955070"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_controller.html#aa6be1e2069032feac82a1db98b955070">Flashlight</a></td></tr>
+<tr class="memdesc:aa6be1e2069032feac82a1db98b955070"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player's flashlight.  <a href="#aa6be1e2069032feac82a1db98b955070">More...</a><br /></td></tr>
+<tr class="separator:aa6be1e2069032feac82a1db98b955070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -257,6 +259,46 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a32fd44ceaa69367066dcde436d484f73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.ToggleFlashlight </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assumeInput</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggle the player's flashlight if input received. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_controller_a32fd44ceaa69367066dcde436d484f73_cgraph.png" border="0" usemap="#class_player_controller_a32fd44ceaa69367066dcde436d484f73_cgraph" alt=""/></div>
+<map name="class_player_controller_a32fd44ceaa69367066dcde436d484f73_cgraph" id="class_player_controller_a32fd44ceaa69367066dcde436d484f73_cgraph">
+<area shape="rect" id="node2" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="265,31,396,57"/>
+<area shape="rect" id="node3" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="448,5,635,32"/>
+<area shape="rect" id="node4" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="444,56,639,83"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_controller_a32fd44ceaa69367066dcde436d484f73_icgraph.png" border="0" usemap="#class_player_controller_a32fd44ceaa69367066dcde436d484f73_icgraph" alt=""/></div>
+<map name="class_player_controller_a32fd44ceaa69367066dcde436d484f73_icgraph" id="class_player_controller_a32fd44ceaa69367066dcde436d484f73_icgraph">
+<area shape="rect" id="node2" href="class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43" title="PlayerController.Update" alt="" coords="265,5,424,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ae8bc83dffb99867a04be016473ed2c43"></a>
 <div class="memitem">
 <div class="memproto">
@@ -283,13 +325,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph.png" border="0" usemap="#class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph" alt=""/></div>
 <map name="class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph" id="class_player_controller_ae8bc83dffb99867a04be016473ed2c43_cgraph">
-<area shape="rect" id="node2" href="class_i_refs.html#ab95590a14075f857596fb231470c0f82" title="Returns true while the requested command is active from a key or joystick button for a specific playe..." alt="" coords="258,56,357,83"/>
-<area shape="rect" id="node5" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="242,107,373,133"/>
-<area shape="rect" id="node8" href="class_player_controller.html#a1e50b53148015ea94166dd1826113c2c" title="toggles ability to walk through walls " alt="" coords="212,158,403,199"/>
-<area shape="rect" id="node3" href="class_i_refs.html#a7c4ffa56431c7d499c60f2ee7b973a60" title="Returns true while the requested command is active from a keyboard or mouse key for a specific player..." alt="" coords="471,5,625,32"/>
-<area shape="rect" id="node4" href="class_i_refs.html#a460145658fc93246db843dcbeeff329c" title="Returns true while the requested command is active from a joystick button for a specific player..." alt="" coords="467,56,629,83"/>
-<area shape="rect" id="node6" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="455,107,641,133"/>
-<area shape="rect" id="node7" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="451,157,645,184"/>
+<area shape="rect" id="node2" href="class_i_refs.html#ab95590a14075f857596fb231470c0f82" title="Returns true while the requested command is active from a key or joystick button for a specific playe..." alt="" coords="269,31,367,57"/>
+<area shape="rect" id="node5" href="class_i_refs.html#a318c8ac7169db3cfe940b1b7ac7e7d2a" title="Returns true during the frame the requested command begins from a key or joystick button for a specif..." alt="" coords="488,140,619,167"/>
+<area shape="rect" id="node8" href="class_player_controller.html#a1e50b53148015ea94166dd1826113c2c" title="toggles ability to walk through walls " alt="" coords="223,133,413,174"/>
+<area shape="rect" id="node9" href="class_player_controller.html#a32fd44ceaa69367066dcde436d484f73" title="Toggle the player&#39;s flashlight if input received. " alt="" coords="212,199,424,225"/>
+<area shape="rect" id="node3" href="class_i_refs.html#a7c4ffa56431c7d499c60f2ee7b973a60" title="Returns true while the requested command is active from a keyboard or mouse key for a specific player..." alt="" coords="476,5,631,32"/>
+<area shape="rect" id="node4" href="class_i_refs.html#a460145658fc93246db843dcbeeff329c" title="Returns true while the requested command is active from a joystick button for a specific player..." alt="" coords="472,56,635,83"/>
+<area shape="rect" id="node6" href="class_i_refs.html#a802b77c505c272d945938235e80a396f" title="Returns true during the frame the requested command begins from a keyboard or mouse key for a specifi..." alt="" coords="687,115,873,141"/>
+<area shape="rect" id="node7" href="class_i_refs.html#aac1e1d5678614b48b853d16198a55869" title="Returns true during the frame the requested command begins from a joystick button for a specific play..." alt="" coords="683,165,877,192"/>
 </map>
 </div>
 </p>
@@ -338,6 +381,20 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>is the player able to walk through walls </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6be1e2069032feac82a1db98b955070"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerController.Flashlight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The player's flashlight. </p>
 
 </div>
 </div>

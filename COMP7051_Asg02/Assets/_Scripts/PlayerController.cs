@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour {
     /**character running speed*/
     public float runSpeed = 10;
 
+    public GameObject Flashlight;   /**< The player's flashlight. */
+
     /**player character's rigidbody*/
     private Rigidbody rb;
 
@@ -117,12 +119,27 @@ public class PlayerController : MonoBehaviour {
         {
             gameObject.GetComponent<AudioController>().StopAudio(AudioController.AudioNames.Footsteps);
         }
+
+        /* Toggle the player's flashlight if input received. */
+        ToggleFlashlight();
     }
     
     /**toggles ability to walk through walls*/
     public void toggleDetectCollisions() {
         detectCollisions = !detectCollisions;
         rb.isKinematic = !detectCollisions;
+    }
+
+    /**
+        Toggle the player's flashlight if input received.
+    */
+    public void ToggleFlashlight(bool assumeInput = false)
+    {
+        if (assumeInput ||
+            IRefs.GetKeyDown(IRefs.Command.ToggleFlashlight, 1, IRefs.InputSource.Any))
+        {
+            Flashlight.SetActive(!Flashlight.activeSelf);
+        }
     }
 
     /**

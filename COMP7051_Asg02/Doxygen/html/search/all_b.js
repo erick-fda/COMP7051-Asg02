@@ -16,5 +16,5 @@ var searchData=
   ['monstercontroller',['MonsterController',['../class_monster_controller.html',1,'']]],
   ['monstercontroller_2ecs',['MonsterController.cs',['../_monster_controller_8cs.html',1,'']]],
   ['move',['move',['../class_debug_camera_controller.html#a3758d82502555af0114cd2b83dfb0034',1,'DebugCameraController']]],
-  ['musictoplay',['musicToPlay',['../class_audio_controller.html#a71005dc9abba3baa58285ed2a6e8adae',1,'AudioController']]]
+  ['musictoplay',['MusicToPlay',['../class_audio_controller.html#a9baba77c643895839707f20ad8803094',1,'AudioController.MusicToPlay()'],['../class_audio_controller.html#a71005dc9abba3baa58285ed2a6e8adae',1,'AudioController.musicToPlay()']]]
 ];
