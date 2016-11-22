@@ -84,23 +84,14 @@ Shader "COMP7051_Asg02/EnvironmentPlus"
 				Shader Data
 			-------------------------------------------------------------------------------*/            
             /*
-				Information to be passed to the vertex shader.
-			*/
-			struct vertexInput 
-			{
-				float4 vertex : POSITION;
-				float3 normal : NORMAL;
-			};
-			
-			/*
 				Information to be passed from the vertex shader to the fragment shader.
 			*/
-			struct fragmentInput
+			struct v2f
 			{
-				float4 position : SV_POSITION;
-				float3 normalDirection : NORMAL;
-				float2 uv : TEXCOORD0;
-				UNITY_FOG_COORDS(1)
+				float4 position : SV_POSITION;	/* Position of the vertex. */
+				float3 normal : NORMAL;			/* Normal of the vertex. */
+				float2 uv : TEXCOORD0;			/* Texture coordinate for the vertex. */
+				UNITY_FOG_COORDS(1) 			/* Texcoord to pass the fog amount. */
 			};
 			
 			/*-------------------------------------------------------------------------------
@@ -109,56 +100,52 @@ Shader "COMP7051_Asg02/EnvironmentPlus"
 			/*
 				VERTEX SHADER
 			*/
-			fragmentInput vertexShader(vertexInput input)
+			v2f vertexShader(appdata_base v)
 			{
-				/* Create an output variable. */
-				fragmentInput output;
+				v2f o;
 
-				/* Get normal and inverse model matrices. */
-				float4x4 modelMatrix = unity_ObjectToWorld;
-				float4x4 modelMatrixInverse = unity_WorldToObject;
+				/* Get the position and normal of the vertex. */
+				o.position = UnityObjectToClipPos(v.vertex);
+				o.normal = v.normal;
 
-				/* Get the position, normal direction, and texture coordinates. */
-				output.normalDirection = normalize(mul(float4(input.normal, 0.0), modelMatrixInverse).xyz);
-				output.position = mul(UNITY_MATRIX_MVP, input.vertex);
-				output.uv = TRANSFORM_TEX(mul(modelMatrix, input.vertex), _MainTex);
-				
+				/* Get the texture coordinate for this vertex. */
+				o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
+
 				/* Determine the amount of fog to be applied. */
-				UNITY_TRANSFER_FOG(output, output.position);
-				
-				/* Return output to the fragment shader. */
-				return output;
+				UNITY_TRANSFER_FOG(o, o.position);
+
+				return o;
 			}
 
 			/*
 				FRAGMENT SHADER
 			*/
-			float4 fragmentShader(fragmentInput input) : COLOR
+			float4 fragmentShader(v2f psIn) : SV_Target
 			{
-				/* Get the effect of the angle between the direction of the diffuse light
+                /* Get the effect of the angle between the direction of the diffuse light 
 					and the vertex's normal. */
-				float4 diffuse = saturate(dot(_DiffuseDirection, input.normalDirection));
+				float4 diffuse = saturate(dot(_DiffuseDirection, psIn.normal));
 
 				/* Get the color of the vertex's texture coordinate. */
-				float4 texcol = tex2D(_MainTex, input.uv);
-
-				/* Determine the pre-fog color for the pixel based on the texture color, diffuse angle,
+				float4 texcol = tex2D(_MainTex, psIn.uv);
+                
+                /* Determine the pre-fog color for the pixel based on the texture color, diffuse angle, 
 					and diffuse diffuse and ambient colors and intensities. */
-				float4 color = saturate
+                float4 color = saturate
 				(
 					/* Add the effects of ambient and diffuse light... */
-					((_AmbientColor * _AmbientIntensity) +
+					((_AmbientColor * _AmbientIntensity) + 
 					(diffuse * _DiffuseColor * _DiffuseIntensity))
-
-					/* ...multiply by the material's color... */
-					* _Color
-
-					/* ...and multiply by the texture color. */
-					* texcol
+						
+						/* ...multiply by the material's color... */
+						* _Color
+							
+							/* ...and multiply by the texture color. */
+							* texcol
 				);
 
 				/* Apply fog. */
-				UNITY_APPLY_FOG(input.fogCoord, color);
+				UNITY_APPLY_FOG(psIn.fogCoord, color);
 
 				/* Return the color with fog applied. */
 				return color;
