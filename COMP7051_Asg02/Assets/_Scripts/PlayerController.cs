@@ -144,15 +144,14 @@ public class PlayerController : MonoBehaviour {
 
     /**
         Plays a sound effect when the player collides with a wall.
+
+        @param collision - The Collision object describing the collision event.
     */
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        /* If the player object can collide with walls and the other object is a wall, 
-            play a sound effect. */
-        if ((detectCollisions) &&
-            (other.gameObject.CompareTag(Refs.Tags.Wall)))
+        /* If the object collided with was a wall, play the wall collision sound effect. */
+        if (collision.collider.CompareTag("Wall"))
         {
-            Debug.Log("You collided with a wall!");
             gameObject.GetComponent<AudioController>().PlayAudio(AudioController.AudioNames.WallCollision);
         }
     }
