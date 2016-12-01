@@ -22,7 +22,7 @@
     The game has been ported to Windows, OSX, and Android.
     
 ---------------------------------------------------------------------------------------------
-    ## Gameplay Controls
+    ## Gameplay Controls (Maze Game)
 ---------------------------------------------------------------------------------------------
     CONTROL                         KEYBOARD/MOUSE          XBOX CONTROLLER     ANDROID
     Toggle day/night lighting   -   L or Menu button    -   B               -   Menu button
@@ -47,7 +47,35 @@
     Toggle Music On/Off         -   X                   -   Back            -   Menu button
     
     Toggle Flashlight           -   Z                   -   Right Bumper    -   Menu Button
+
+    Throw Ball                  -  space or UI button   -   X               -   UI button
     
+
+    PONG MINIGAME CONTROLS:
+	Player 1
+		keyboard: w s
+		Controller1: left joystick Y-Axis
+		mobile: tap or drag
+	 	
+	Player2 (multiplayer only)
+		keyboard: up down arrows
+		Controller2: left joystick Y-Axis
+	
+	bring up console
+		keyboard: c
+	
+	start singleplayer game	against AI (from main menu)
+		keyboard: a
+		Mouse: left click "play against AI" button
+		Controller: A
+		mobile: tap "play against AI" button
+	
+	start multiplayer game (from main menu)
+		keyboard: b
+		Mouse: left click "play Multiplayer" button
+		Controller: B
+		mobile: tap "play Multiplayer" " button
+
 ---------------------------------------------------------------------------------------------
     ## Code Documentation
 ---------------------------------------------------------------------------------------------
@@ -60,6 +88,6 @@
    - Ground and floor textures obtained on the Unity Asset Store.
    - Sound effects obtained on the Unity Asset Store.
    - Background music obtained from the Final Fantasy II Soundtrack.
- 
+
    - Monster and player character models and animations obtained from the Unity Asset Store
 	(Animator Controllers and all scripts made by us)

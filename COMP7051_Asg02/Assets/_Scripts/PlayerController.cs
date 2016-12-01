@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
     public Transform projectileSpawn;
 
     /**The speed at whicht he projectile is fired*/
-    public float projectileSpeed = 50;
+    public float projectileSpeed = 40;
 
     /**player character's rigidbody*/
     private Rigidbody rb;
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour {
     */
         // Update is called once per frame
         void Update() {
-        if (Input.GetKeyDown("space")) {
+        if (Application.platform != RuntimePlatform.Android && IRefs.GetKeyDown(IRefs.Command.ThrowBall)) { 
             fire();
         }
 
@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void fire() {
+    public void fire() {
         // Create the Bullet from the Bullet Prefab
         Projectile ball = (Projectile)Instantiate(
             projectilePrefab,
