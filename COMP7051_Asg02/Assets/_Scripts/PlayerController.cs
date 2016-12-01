@@ -14,6 +14,15 @@ public class PlayerController : MonoBehaviour {
     public float runSpeed = 10;
 
     public GameObject Flashlight;   /**< The player's flashlight. */
+    
+    /**The projectile that the player can fire*/
+    public Projectile projectilePrefab;
+
+    /**The spawn point of the projectile when firing*/
+    public Transform projectileSpawn;
+
+    /**The speed at whicht he projectile is fired*/
+    public float projectileSpeed = 40;
 
     /**player character's rigidbody*/
     private Rigidbody rb;
@@ -52,12 +61,14 @@ public class PlayerController : MonoBehaviour {
     */
         // Update is called once per frame
         void Update() {
-        if (Input.GetAxis("Vertical") > .1)
-        {
+        if (Application.platform != RuntimePlatform.Android && IRefs.GetKeyDown(IRefs.Command.ThrowBall)) { 
+            fire();
+        }
+
+            if (Input.GetAxis("Vertical") > .1) {
             anim.SetFloat("forwardMotion", Input.GetAxis("Vertical"));
         }
-        else
-        {
+        else {
             anim.SetFloat("forwardMotion", 0);
         }
 
@@ -72,8 +83,7 @@ public class PlayerController : MonoBehaviour {
         float speed = isRunning ? runSpeed : walkSpeed;
 
         //forward movement (controller and keyboard)
-        if (Input.GetAxis("Vertical") > 0)
-        {
+        if (Input.GetAxis("Vertical") > 0) {
             transform.Translate(transform.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime, Space.World);
         }
 
@@ -154,5 +164,16 @@ public class PlayerController : MonoBehaviour {
         {
             gameObject.GetComponent<AudioController>().PlayAudio(AudioController.AudioNames.WallCollision);
         }
+    }
+
+    public void fire() {
+        // Create the Bullet from the Bullet Prefab
+        Projectile ball = (Projectile)Instantiate(
+            projectilePrefab,
+            projectileSpawn.position,
+            projectileSpawn.rotation);
+
+        // Add velocity to the bullet
+        ball.GetComponent<Rigidbody>().velocity = ball.transform.forward * projectileSpeed;
     }
 }

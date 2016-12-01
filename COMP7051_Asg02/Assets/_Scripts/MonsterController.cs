@@ -12,6 +12,12 @@ public class MonsterController : MonoBehaviour {
     /**how long the monster continues to turn after it is no longer colliding with an object*/
     public float turningTime = 1;
 
+    /**The scene controller that keeps track of the scoring*/
+    private Scene sceneController;
+
+    /**The monster's audio source. Used for sound effects when hit*/
+    private AudioSource audioSource;
+
     /** the direction to turn in positive = right negetive = left. This is set in OnCollisionStay()*/
     private float turnDirection = 1;
 
@@ -26,6 +32,11 @@ public class MonsterController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        GameObject sceneObject = GameObject.Find("Scene");
+        sceneController = sceneObject.GetComponent<Scene>();
+
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         anim = GetComponent<Animator>();
     }
 
@@ -64,6 +75,11 @@ public class MonsterController : MonoBehaviour {
             turnDirection = -1;
         else if (firstContactLocal.x < 0)
             turnDirection = 1;
+    }
+
+    public void takeDamge() {
+        sceneController.addToScore(10);
+        audioSource.Play();
     }
 
 }

@@ -14,6 +14,7 @@
 ===========================================================================================*/
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /*===========================================================================================
 	Scene
@@ -30,6 +31,7 @@ public class Scene : MonoBehaviour
 		Game Object References
 	---------------------------------------------------------------------------------------*/
     public GameObject Player;       /**< The player GameObject. */
+    public GameObject Monster;       /**< The monster GameObject. */
 
     public Material mat_Ground;     /**< The material for the level's ground. */
     public Material mat_TopWalls;   /**< The material for the maze's top walls. */
@@ -37,6 +39,9 @@ public class Scene : MonoBehaviour
     public Material mat_SouthWalls; /**< The material for the maze's south walls. */
     public Material mat_EastWalls;  /**< The material for the maze's east walls. */
     public Material mat_WestWalls;  /**< The material for the maze's west walls. */
+
+    public int score; /**the player's score*/
+    public Text scoreText; /**the text to display the player score*/
 
     /*---------------------------------------------------------------------------------------
 		Public
@@ -190,4 +195,15 @@ public class Scene : MonoBehaviour
             Player.GetComponent<AudioController>().PlayAudio(Player.GetComponent<AudioController>().MusicToPlay);
         }
     }
+
+    public void setScore(int newScore) {
+        score = newScore;
+        scoreText.text = "Score: " + score.ToString();
+    }
+
+    public void addToScore(int addedScore) {
+        score += addedScore;
+        scoreText.text = "Score: " + score.ToString();
+    }
+
 }
